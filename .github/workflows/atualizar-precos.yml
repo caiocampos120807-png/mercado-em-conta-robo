@@ -43,11 +43,14 @@ jobs:
       - name: Atualizar histórico e indicadores
         run: python gerar_indicadores.py
 
+      - name: Gerar relatório de cobertura comercial verificável
+        run: python relatorio_negocio.py
+
       - name: Salvar resultados sem gerar preços falsos
         run: |
           git config user.name 'mercado-em-conta-bot'
           git config user.email 'mercado-em-conta-bot@users.noreply.github.com'
-          git add precos.csv status.json catalogo.json historico.json indicadores.json catalogo_redes.json redes-status.json
+          git add precos.csv status.json catalogo.json historico.json indicadores.json catalogo_redes.json redes-status.json relatorio_negocio.json
           if ! git diff --cached --quiet; then
             git commit -m 'Atualizar precos e cobertura de redes'
             git push
