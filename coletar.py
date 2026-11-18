@@ -46,56 +46,126 @@ def br_price(raw):
 
 
 class ProductPage(HTMLParser):
+    """Lê somente texto visível, títulos completos e dados estruturados.
+
+    Um título pode conter vários <span>s: não se deve validar cada fragmento
+    isoladamente. Scripts só são analisados quando são JSON-LD (Schema.org).
+    """
     def __init__(self):
         super().__init__(convert_charrefs=True)
         self.parts = []
-        self.heading = []
-        self._heading_depth = 0
+        self.heading = []  # mantido para compatibilidade
+        self.heading_blocks = []
+        self._heading_tag = None
+        self._heading_parts = []
         self._ignored = 0
-        self._ld = False
+        self._json_ld_active = False
         self._json_scripts = []
         self._current_script = []
         self.prices = []
+        self.price_currencies = []
 
     def handle_starttag(self, tag, attrs):
         d = dict(attrs)
         if tag in {'script', 'style', 'noscript', 'svg'}:
-            self._ignored += 1
-            if tag == 'script' and d.get('type', '').lower() == 'application/ld+json':
-                self._ld = True
+            if tag == 'script' and self._ignored == 0 and d.get('type', '').lower().strip() == 'application/ld+json':
+                self._json_ld_active = True
                 self._current_script = []
-        if tag in {'h1', 'h2', 'h3'} and not self._ignored:
-            self._heading_depth += 1
+            self._ignored += 1
+            return
+        if self._ignored:
+            return
+        if tag in {'h1', 'h2', 'h3'} and self._heading_tag is None:
+            self._heading_tag = tag
+            self._heading_parts = []
         if tag == 'meta':
-            marker = (d.get('property', '') + ' ' + d.get('itemprop', '')).lower()
-            if any(s in marker for s in ['product:price:amount', 'og:price:amount', 'price']):
+            marker = ' '.join(str(d.get(k, '')) for k in ('property', 'itemprop', 'name')).lower()
+            if any(x in marker for x in ('product:price:amount', 'og:price:amount')) or marker.strip() == 'price':
                 self.prices.append(d.get('content', ''))
+            if 'pricecurrency' in marker or 'price:currency' in marker:
+                self.price_currencies.append(d.get('content', ''))
 
     def handle_endtag(self, tag):
-        if tag in {'h1', 'h2', 'h3'} and self._heading_depth:
-            self._heading_depth -= 1
-        if tag == 'script' and self._ld:
+        if tag == self._heading_tag and not self._ignored:
+            title = re.sub(r'\s+', ' ', ' '.join(self._heading_parts)).strip()
+            if title:
+                self.heading_blocks.append(title)
+                self.heading.append(title)
+            self._heading_tag = None
+            self._heading_parts = []
+        if tag == 'script' and self._json_ld_active:
             self._json_scripts.append(''.join(self._current_script))
+            self._json_ld_active = False
             self._current_script = []
-            self._ld = False
         if tag in {'script', 'style', 'noscript', 'svg'} and self._ignored:
             self._ignored -= 1
 
     def handle_data(self, data):
-        data = unescape(data).strip()
-        if not data:
-            return
-        if self._ld:
+        if self._json_ld_active:
             self._current_script.append(data)
-        elif not self._ignored:
+            return
+        if self._ignored:
+            return
+        data = unescape(data).strip()
+        if data:
             self.parts.append(data)
-            if self._heading_depth:
-                self.heading.append(data)
+            if self._heading_tag:
+                self._heading_parts.append(data)
 
     @property
     def text(self):
         return re.sub(r'\s+', ' ', ' '.join(self.parts))
 
+
+def jsonld_prices(page, source):
+    """Preços de ofertas Schema.org do produto exato, sem chutar valores.
+
+    Só aceita um preço inequívoco e moeda BRL (ou não especificada).
+    Ofertas de outros produtos, AggregateOffer e itens esgotados são ignorados.
+    """
+    candidates = set()
+    def visit(node):
+        if isinstance(node, list):
+            for part in node:
+                visit(part)
+            return
+        if not isinstance(node, dict):
+            return
+        types = node.get('@type', '')
+        types = types if isinstance(types, list) else [types]
+        if any(str(t).lower().split('/')[-1] == 'product' for t in types):
+            if name_matches(str(node.get('name', '')), source):
+                offers = node.get('offers', [])
+                offers = offers if isinstance(offers, list) else [offers]
+                for offer in offers:
+                    if not isinstance(offer, dict):
+                        continue
+                    typ = offer.get('@type', 'Offer')
+                    types2 = typ if isinstance(typ, list) else [typ]
+                    if not any(str(t).lower().split('/')[-1] == 'offer' for t in types2):
+                        continue
+                    if str(offer.get('priceCurrency', 'BRL')).upper() != 'BRL':
+                        continue
+                    availability = str(offer.get('availability', '')).lower()
+                    if any(x in availability for x in ('outofstock', 'soldout', 'discontinued', 'preorder')):
+                        continue
+                    price = offer.get('price')
+                    if price is None and isinstance(offer.get('priceSpecification'), dict):
+                        spec = offer['priceSpecification']
+                        if str(spec.get('priceCurrency', 'BRL')).upper() == 'BRL':
+                            price = spec.get('price')
+                    value = br_price(price)
+                    if value is not None:
+                        candidates.add(value)
+        for nested in node.values():
+            if isinstance(nested, (dict, list)):
+                visit(nested)
+    for raw in page._json_scripts:
+        try:
+            visit(json.loads(raw))
+        except (ValueError, TypeError, RecursionError):
+            continue
+    return candidates
 
 def name_matches(page_title, source):
     t = normal(page_title)
@@ -120,33 +190,64 @@ def name_matches(page_title, source):
 
 
 def parse_price(html, source):
+    """Lê o preço principal de uma página do produto, com múltiplos formatos.
+
+    Prioridades: oferta JSON-LD verificável; preço exibido imediatamente após
+    o título confirmado. Nunca pega total do carrinho, preço por kg, recomendação
+    de outro produto ou valores sem identidade.
+    """
     page = ProductPage()
     page.feed(html)
-    # Título real do produto deve aparecer em um heading.
-    headings = [h for h in page.heading if len(h) > 7]
-    title = next((h for h in headings if name_matches(h, source)), None)
-    if not title:
-        raise ValueError('O título do produto não confere com marca/tamanho (ou não foi encontrado)')
-    txt = page.text
-    pos = txt.find(title)
-    if pos < 0:
-        raise ValueError('Não foi possível identificar a área do produto')
-    nearby = txt[pos + len(title):pos + len(title) + 850]
-    # Para evitar confundir carrinho, preço por quilo e ofertas ao redor,
-    # aceita somente formato específico e próximo do nome do produto.
-    if source['tipo'] == 'sonda':
-        match = re.search(r'\bPor\s*R\$\s*' + PRICE_RE, nearby, re.I)
-    elif source['tipo'] == 'pao':
-        match = re.search(r'\bC[oó]d\.?\s*:\s*[0-9]+\s*R\$\s*' + PRICE_RE, nearby, re.I)
-    else:
-        raise ValueError('Tipo de página não suportado')
-    if not match:
-        raise ValueError('Preço principal não encontrado no formato esperado')
-    price = br_price(match.group(1))
-    if price is None:
-        raise ValueError('Preço inválido')
-    return price
 
+    titles = [h for h in page.heading_blocks if name_matches(h, source)]
+    if not titles:
+        raise ValueError('Produto exato não encontrado no título da página (marca/embalagem)')
+
+    structured = jsonld_prices(page, source)
+    if len(structured) == 1:
+        return structured.pop()
+    if len(structured) > 1:
+        raise ValueError('Múltiplos preços conflitantes no JSON-LD')
+
+    # Pega o trecho depois do título de produto (e não a barra de navegação).
+    visible = page.text
+    title = max(titles, key=len)
+    start = visible.find(title)
+    if start < 0:
+        raise ValueError('Área do produto não localizada no HTML visível')
+    nearby = visible[start + len(title):start + len(title) + 900]
+    # Não examina recomendações, rodapé ou especificações distantes.
+    nearby = re.split(r'\b(?:descri[cç][aã]o do produto|informa[cç][oõ]es nutricionais|produtos relacionados|quem comprou tamb[eé]m|voc[eê] tamb[eé]m pode)\b', nearby, maxsplit=1, flags=re.I)[0]
+    # Sem texto visível ainda é possível haver uma meta tag válida.
+
+    # Valores do carrinho e de unidade não são preço total do produto.
+    price_amount = r'((?:[1-9]\d{0,2}(?:\.\d{3})+|[1-9]\d{0,4}),\d{2})'
+    patterns = [
+        r'\bPor\s*R\$\s*' + price_amount,  # Sonda e promoções
+        r'\b(?:Pre[cç]o(?:\s+(?:de\s+)?venda)?|Valor)\s*:?\s*R\$\s*' + price_amount,
+        r'R\$\s*' + price_amount,              # Pão: Cód. 123 R$ 27,99
+    ]
+    for pattern in patterns:
+        for match in re.finditer(pattern, nearby, re.I):
+            prefix = nearby[max(0, match.start()-44):match.start()].lower()
+            # Preço por 1kg/1L e totais/resumos não servem à comparação.
+            if re.search(r'(?:pre[cç]o\s+por\s*(?:\d+\s*)?(?:kg|g|l|ml|unidade)|subtotal|carrinho|frete|economize|desconto)\s*[-:]?\s*$', prefix, re.I):
+                continue
+            if re.search(r'\bde\s*$', prefix, re.I):
+                continue  # preço antigo "De R$", não a oferta atual
+            value = br_price(match.group(1))
+            if value is not None:
+                return value
+
+    # Meta tags publicadas para este produto: aceita somente preço único.
+    currencies = {str(c).upper() for c in page.price_currencies if c}
+    if currencies and currencies != {'BRL'}:
+        raise ValueError('Meta tag com moeda diferente de BRL')
+    meta_values = {v for raw in page.prices if (v := br_price(raw)) is not None}
+    if len(meta_values) == 1:
+        return meta_values.pop()
+
+    raise ValueError('Preço principal não identificado com segurança (página pode exigir JavaScript/CEP)')
 
 def get_text(url, size_limit=3_000_000):
     req = Request(url, headers={'User-Agent': AGENT, 'Accept': 'text/html,text/plain;q=0.8', 'Accept-Language': 'pt-BR,pt;q=0.8'}, method='GET')
