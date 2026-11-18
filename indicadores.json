@@ -1,0 +1,16 @@
+{
+  "urls_catalogo": 138,
+  "paginas_listagem": 696,
+  "schema": 1,
+  "gerado_em_utc": "2026-11-18T22:41:34+00:00",
+  "data_referencia": "2026-11-18",
+  "ofertas_ativas": 132,
+  "produtos_distintos": 128,
+  "produtos_em_2_ou_mais_mercados": 3,
+  "supermercados": 2,
+  "marcas": 12,
+  "ofertas_rejeitadas": 0,
+  "motivos_rejeicao": {},
+  "observacoes_historicas": 132,
+  "nota": "Preços de páginas públicas, sujeitos a CEP, entrega, loja e alteração. Comparabilidade por nome/marca/embalagem EXATOS. Ofertas vencidas são omitidas."
+}
