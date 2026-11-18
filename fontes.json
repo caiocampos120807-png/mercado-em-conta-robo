@@ -1,0 +1,23 @@
+{
+  "observacao": "Páginas públicas de referência. Os preços variam por CEP/loja. A coleta depende de robots.txt, termos e disponibilidade; nunca confie em valores fixos.",
+  "fontes": [
+    {
+      "produto": "Arroz branco", "marca": "Camil", "tamanho": 5, "unidade": "kg", "categoria": "Mercearia", "mercado": "Pão de Açúcar (online)", "cidade": "São Paulo", "uf": "SP", "tipo": "pao", "url": "https://www.paodeacucar.com/produto/41329/arroz-agulhinha-tipo-1-camil-pacote-5kg"
+    },
+    {
+      "produto": "Arroz branco", "marca": "Camil", "tamanho": 5, "unidade": "kg", "categoria": "Mercearia", "mercado": "Sonda (online)", "cidade": "São Paulo", "uf": "SP", "tipo": "sonda", "url": "https://www.sondadelivery.com.br/delivery/produto/arroz-branco-camil-5kg/1000001195"
+    },
+    {
+      "produto": "Feijão carioca", "marca": "Camil", "tamanho": 1, "unidade": "kg", "categoria": "Mercearia", "mercado": "Pão de Açúcar (online)", "cidade": "São Paulo", "uf": "SP", "tipo": "pao", "url": "https://www.paodeacucar.com/produto/9461/feijao-carioca-tipo-1-camil-pacote-1kg"
+    },
+    {
+      "produto": "Feijão carioca", "marca": "Camil", "tamanho": 1, "unidade": "kg", "categoria": "Mercearia", "mercado": "Sonda (online)", "cidade": "São Paulo", "uf": "SP", "tipo": "sonda", "url": "https://www.sondadelivery.com.br/delivery/produto/feijao-carioca-camil--1kg/1000001726"
+    },
+    {
+      "produto": "Leite integral", "marca": "Parmalat", "tamanho": 1, "unidade": "l", "categoria": "Laticínios", "mercado": "Pão de Açúcar (online)", "cidade": "São Paulo", "uf": "SP", "tipo": "pao", "url": "https://www.paodeacucar.com/produto/97827/leite-longa-vida-integral-parmalat-1-litro"
+    },
+    {
+      "produto": "Leite integral", "marca": "Parmalat", "tamanho": 1, "unidade": "l", "categoria": "Laticínios", "mercado": "Sonda (online)", "cidade": "São Paulo", "uf": "SP", "tipo": "sonda", "url": "https://www.sondadelivery.com.br/delivery/produto/leite-longa-vida-integral-parmalat-1-litro/1000012315"
+    }
+  ]
+}
