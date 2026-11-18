@@ -1,0 +1,14 @@
+{
+  "max_paginas_descoberta_por_execucao": 8,
+  "max_produtos_consultados_por_execucao": 180,
+  "max_produtos_catalogo": 12000,
+  "max_paginas_catalogo": 1200,
+  "intervalo_minimo_por_site_segundos": 3,
+  "dias_para_manter_preco_confirmado": 2,
+  "horas_para_reconsultar_produto": 18,
+  "horas_para_reconsultar_pagina": 72,
+  "cidade_online": "São Paulo",
+  "uf_online": "SP",
+  "mensagem": "Limites conservadores por padrao. Não aumente a frequência sem autorização dos sites. Não há garantia de coleta nem de acesso para cada CEP.",
+  "max_duracao_execucao_minutos": 19
+}
