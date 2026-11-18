@@ -3,7 +3,7 @@ name: Atualizar preços de supermercado
 on:
   workflow_dispatch:
   schedule:
-    # Horário UTC: 06h17 e 18h17 em Brasília (sem horário de verão)
+    # UTC: 09h17 e 21h17. Em Brasília: ~06h17 e ~18h17.
     - cron: '17 9,21 * * *'
 
 permissions:
@@ -16,36 +16,39 @@ concurrency:
 jobs:
   coletar:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 39
     steps:
-      - name: Baixar arquivos
+      - name: Baixar projeto
         uses: actions/checkout@v4
         with:
           persist-credentials: true
 
-      - name: Preparar Python
+      - name: Preparar Python gratuito
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
 
-      - name: Testes sem acesso aos supermercados
+      - name: Testar todo o robô
         run: python -m unittest discover -s tests -v
 
-      - name: Atualizar ofertas iniciais
+      - name: Coletar as fontes originais
         run: python coletar.py
 
-      - name: Descobrir produtos novos e atualizar catálogo
+      - name: Descobrir catálogo Pão de Açúcar e Sonda
         run: python expandir_catalogo.py
 
-      - name: Gerar histórico e auditoria (sem preços fictícios)
+      - name: Buscar preços em redes adicionais
+        run: python integrar_redes.py
+
+      - name: Atualizar histórico e indicadores
         run: python gerar_indicadores.py
 
-      - name: Publicar apenas ofertas e estado verificados
+      - name: Salvar resultados sem gerar preços falsos
         run: |
           git config user.name 'mercado-em-conta-bot'
           git config user.email 'mercado-em-conta-bot@users.noreply.github.com'
-          git add precos.csv status.json catalogo.json historico.json indicadores.json
+          git add precos.csv status.json catalogo.json historico.json indicadores.json catalogo_redes.json redes-status.json
           if ! git diff --cached --quiet; then
-            git commit -m 'Atualiza catalogo e precos'
+            git commit -m 'Atualizar precos e cobertura de redes'
             git push
           fi
