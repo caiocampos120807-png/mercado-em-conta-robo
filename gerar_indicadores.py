@@ -16,7 +16,7 @@ from pathlib import Path
 from urllib.parse import urlsplit
 
 BASE = Path(__file__).resolve().parent
-ALLOWED = {'www.paodeacucar.com', 'www.sondadelivery.com.br'}
+ALLOWED = {'www.paodeacucar.com', 'www.sondadelivery.com.br', 'www.extramercado.com.br', 'mercado.carrefour.com.br', 'www.atacadao.com.br', 'www.mambo.com.br'}
 UNITS = {'kg', 'g', 'ml', 'l', 'un'}
 MAX_AGE_DAYS = 2
 HISTORY_DAYS = 75

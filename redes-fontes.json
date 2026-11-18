@@ -1,0 +1,79 @@
+{
+  "versao": 1,
+  "cidade_online": "São Paulo",
+  "uf_online": "SP",
+  "limites": {
+    "paginas_listagem_por_execucao": 12,
+    "paginas_produto_por_execucao": 65,
+    "max_links_por_rede": 6000,
+    "intervalo_minimo_por_dominio_segundos": 4,
+    "max_duracao_minutos": 10,
+    "validade_preco_dias": 2,
+    "intervalo_entre_listagens_horas": 30,
+    "intervalo_entre_produtos_horas": 21
+  },
+  "redes": [
+    {
+      "id": "extra",
+      "nome": "Extra Mercado (online)",
+      "host": "www.extramercado.com.br",
+      "localizacao_confirmada": true,
+      "listagens": [
+        "https://www.extramercado.com.br/especial/hs_arrozfeijao",
+        "https://www.extramercado.com.br/categoria/alimentos/basico-da-despensa/graos-e-cereais/arroz",
+        "https://www.extramercado.com.br/categoria/alimentos/basico-da-despensa",
+        "https://www.extramercado.com.br/categoria/alimentos"
+      ],
+      "produtos_iniciais": [
+        "https://www.extramercado.com.br/produto/41329/arroz-agulhinha-tipo-1-camil-pacote-5kg",
+        "https://www.extramercado.com.br/produto/9461/feijao-carioca-tipo-1-camil-pacote-1kg",
+        "https://www.extramercado.com.br/produto/152052/cafe-torrado-e-moido-pilao-pacote-500g",
+        "https://www.extramercado.com.br/produto/97827/leite-uht-integral-parmalat-caixa-com-tampa-1l"
+      ]
+    },
+    {
+      "id": "carrefour",
+      "nome": "Carrefour (online)",
+      "host": "mercado.carrefour.com.br",
+      "localizacao_confirmada": true,
+      "listagens": [
+        "https://mercado.carrefour.com.br/categoria/mercearia/alimentos-basicos/arroz",
+        "https://mercado.carrefour.com.br/categoria/mercearia/alimentos-basicos/feijao",
+        "https://mercado.carrefour.com.br/categoria/mercearia/alimentos-basicos",
+        "https://mercado.carrefour.com.br/categoria/padaria-e-matinais/leites/",
+        "https://mercado.carrefour.com.br/marca/camil",
+        "https://mercado.carrefour.com.br/marca/parmalat",
+        "https://mercado.carrefour.com.br/categoria/hortifruti",
+        "https://mercado.carrefour.com.br/categoria/bebidas",
+        "https://mercado.carrefour.com.br/marca/carrefour"
+      ],
+      "produtos_iniciais": [
+        "https://mercado.carrefour.com.br/produto/arroz-branco-camil-tipo-kg-1970",
+        "https://mercado.carrefour.com.br/produto/feijao-carioca-camil-1kg-2927"
+      ]
+    },
+    {
+      "id": "atacadao",
+      "nome": "Atacadão (online)",
+      "host": "www.atacadao.com.br",
+      "localizacao_confirmada": false,
+      "listagens": [
+        "https://www.atacadao.com.br/mercearia/graos",
+        "https://www.atacadao.com.br/mercearia/graos/feijao",
+        "https://www.atacadao.com.br/mercearia/graos/arroz-branco"
+      ],
+      "produtos_iniciais": []
+    },
+    {
+      "id": "mambo",
+      "nome": "Mambo (online)",
+      "host": "www.mambo.com.br",
+      "localizacao_confirmada": true,
+      "listagens": [
+        "https://www.mambo.com.br/camil",
+        "https://www.mambo.com.br/ofertas"
+      ],
+      "produtos_iniciais": []
+    }
+  ]
+}
