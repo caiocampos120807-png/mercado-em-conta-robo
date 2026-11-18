@@ -1,15 +1,8 @@
 {
-  "ultima_execucao_utc": "2026-11-18T20:49:16+00:00",
+  "ultima_execucao_utc": "2026-11-18T21:03:54+00:00",
   "fontes_configuradas": 6,
-  "precos_coletados": 0,
-  "fontes_indisponiveis": 6,
-  "avisos": [
-    "Pão de Açúcar (online) / Arroz branco Camil 5kg: ValueError: Preço principal não encontrado no formato esperado",
-    "Sonda (online) / Arroz branco Camil 5kg: ValueError: Preço principal não encontrado no formato esperado",
-    "Pão de Açúcar (online) / Feijão carioca Camil 1kg: ValueError: Preço principal não encontrado no formato esperado",
-    "Sonda (online) / Feijão carioca Camil 1kg: ValueError: Preço principal não encontrado no formato esperado",
-    "Pão de Açúcar (online) / Leite integral Parmalat 1l: ValueError: Preço principal não encontrado no formato esperado",
-    "Sonda (online) / Leite integral Parmalat 1l: ValueError: Preço principal não encontrado no formato esperado"
-  ],
+  "precos_coletados": 6,
+  "fontes_indisponiveis": 0,
+  "avisos": [],
   "nota": "Preços de páginas públicas online, sujeitos a CEP, frete e alterações; não representam estoque local."
 }
