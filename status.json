@@ -1,17 +1,76 @@
 {
-  "ultima_execucao_utc": "2026-11-18T22:41:34+00:00",
+  "ultima_execucao_utc": "2026-11-18T23:22:22+00:00",
   "fontes_configuradas": 6,
-  "precos_coletados": 132,
+  "precos_coletados": 197,
   "fontes_indisponiveis": 0,
   "avisos": [],
   "nota": "Quantidade de URLs descobertas não equivale a ofertas: só contam preços de página confirmada nos últimos três dias corridos (hoje e dois dias anteriores). Apenas preços online, sujeitos a CEP e disponibilidade; não reproduzir como preço de loja física.",
   "modo": "catalogo_incremental",
-  "urls_catalogo": 138,
-  "paginas_listagem": 696,
-  "novos_links_descobertos": 46,
+  "urls_catalogo": 159,
+  "paginas_listagem": 699,
+  "novos_links_descobertos": 21,
   "paginas_consultadas": 8,
-  "produtos_consultados_nesta_expansao": 12,
-  "ofertas_atualizadas_hoje": 132,
-  "fontes_indisponiveis_nesta_expansao": 0,
-  "avisos_expansao": []
+  "produtos_consultados_nesta_expansao": 8,
+  "ofertas_atualizadas_hoje": 152,
+  "fontes_indisponiveis_nesta_expansao": 1,
+  "avisos_expansao": [
+    "produto: https://www.sondadelivery.com.br/delivery/produto/knorr/1000000107: ValueError: Título e embalagem não foram confirmados na página de produto"
+  ],
+  "redes_adicionais": {
+    "gerado_em_utc": "2026-11-18T23:22:22+00:00",
+    "redes_candidatas": 4,
+    "novos_links_descobertos": 52,
+    "paginas_listagem_consultadas": 12,
+    "paginas_produto_consultadas": 56,
+    "ofertas_na_lista": 2,
+    "ofertas_na_pagina": 43,
+    "precos_ativos_total": 197,
+    "redes": {
+      "extra": {
+        "nome": "Extra Mercado (online)",
+        "urls_descobertas": 4,
+        "precos_validos": 3,
+        "estado": "com preços confirmados",
+        "localizacao_exigida": false
+      },
+      "carrefour": {
+        "nome": "Carrefour (online)",
+        "urls_descobertas": 54,
+        "precos_validos": 42,
+        "estado": "com preços confirmados",
+        "localizacao_exigida": false
+      },
+      "atacadao": {
+        "nome": "Atacadão (online)",
+        "urls_descobertas": 0,
+        "precos_validos": 0,
+        "estado": "sem preço confirmado",
+        "localizacao_exigida": true
+      },
+      "mambo": {
+        "nome": "Mambo (online)",
+        "urls_descobertas": 0,
+        "precos_validos": 0,
+        "estado": "sem preço confirmado",
+        "localizacao_exigida": false
+      }
+    },
+    "avisos": [
+      "listagem mambo: HTTPError: HTTP Error 404: Not Found",
+      "produto extra: ValueError: Preço indisponível",
+      "produto carrefour: ValueError: Categoria regulada/não alimentícia excluída do coletor",
+      "produto carrefour: ValueError: Categoria regulada/não alimentícia excluída do coletor",
+      "produto carrefour: ValueError: Categoria regulada/não alimentícia excluída do coletor",
+      "produto carrefour: ValueError: Categoria regulada/não alimentícia excluída do coletor",
+      "produto carrefour: ValueError: Oferta JSON-LD sem título do produto visível",
+      "produto carrefour: ValueError: Categoria regulada/não alimentícia excluída do coletor",
+      "produto carrefour: ValueError: Categoria regulada/não alimentícia excluída do coletor",
+      "produto carrefour: ValueError: Categoria regulada/não alimentícia excluída do coletor",
+      "produto carrefour: ValueError: Categoria regulada/não alimentícia excluída do coletor",
+      "produto carrefour: ValueError: Categoria regulada/não alimentícia excluída do coletor",
+      "produto carrefour: ValueError: Categoria regulada/não alimentícia excluída do coletor",
+      "produto carrefour: ValueError: Categoria regulada/não alimentícia excluída do coletor"
+    ],
+    "nota": "Redes candidatas NÃO são mercados com preços disponíveis. Preços online, sujeitos a loja/CEP. Bloqueio, ausência de preço e estoque desconhecido nunca geram ofertas fictícias."
+  }
 }
