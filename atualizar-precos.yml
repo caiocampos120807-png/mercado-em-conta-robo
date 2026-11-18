@@ -1,0 +1,51 @@
+name: Atualizar preços de supermercado
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Horário UTC: 06h17 e 18h17 em Brasília (sem horário de verão)
+    - cron: '17 9,21 * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: mercado-precos
+  cancel-in-progress: false
+
+jobs:
+  coletar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: Baixar arquivos
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Testes sem acesso aos supermercados
+        run: python -m unittest discover -s tests -v
+
+      - name: Atualizar ofertas iniciais
+        run: python coletar.py
+
+      - name: Descobrir produtos novos e atualizar catálogo
+        run: python expandir_catalogo.py
+
+      - name: Gerar histórico e auditoria (sem preços fictícios)
+        run: python gerar_indicadores.py
+
+      - name: Publicar apenas ofertas e estado verificados
+        run: |
+          git config user.name 'mercado-em-conta-bot'
+          git config user.email 'mercado-em-conta-bot@users.noreply.github.com'
+          git add precos.csv status.json catalogo.json historico.json indicadores.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Atualiza catalogo e precos'
+            git push
+          fi
