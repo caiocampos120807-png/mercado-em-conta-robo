@@ -1,12 +1,12 @@
 {
-  "gerado_em_utc": "2026-11-18T23:22:22+00:00",
+  "gerado_em_utc": "2026-11-18T23:51:15+00:00",
   "redes_candidatas": 4,
-  "novos_links_descobertos": 52,
+  "novos_links_descobertos": 60,
   "paginas_listagem_consultadas": 12,
-  "paginas_produto_consultadas": 56,
-  "ofertas_na_lista": 2,
-  "ofertas_na_pagina": 43,
-  "precos_ativos_total": 197,
+  "paginas_produto_consultadas": 55,
+  "ofertas_na_lista": 5,
+  "ofertas_na_pagina": 54,
+  "precos_ativos_total": 267,
   "redes": {
     "extra": {
       "nome": "Extra Mercado (online)",
@@ -17,8 +17,8 @@
     },
     "carrefour": {
       "nome": "Carrefour (online)",
-      "urls_descobertas": 54,
-      "precos_validos": 42,
+      "urls_descobertas": 114,
+      "precos_validos": 101,
       "estado": "com preços confirmados",
       "localizacao_exigida": false
     },
@@ -38,20 +38,7 @@
     }
   },
   "avisos": [
-    "listagem mambo: HTTPError: HTTP Error 404: Not Found",
-    "produto extra: ValueError: Preço indisponível",
-    "produto carrefour: ValueError: Categoria regulada/não alimentícia excluída do coletor",
-    "produto carrefour: ValueError: Categoria regulada/não alimentícia excluída do coletor",
-    "produto carrefour: ValueError: Categoria regulada/não alimentícia excluída do coletor",
-    "produto carrefour: ValueError: Categoria regulada/não alimentícia excluída do coletor",
-    "produto carrefour: ValueError: Oferta JSON-LD sem título do produto visível",
-    "produto carrefour: ValueError: Categoria regulada/não alimentícia excluída do coletor",
-    "produto carrefour: ValueError: Categoria regulada/não alimentícia excluída do coletor",
-    "produto carrefour: ValueError: Categoria regulada/não alimentícia excluída do coletor",
-    "produto carrefour: ValueError: Categoria regulada/não alimentícia excluída do coletor",
-    "produto carrefour: ValueError: Categoria regulada/não alimentícia excluída do coletor",
-    "produto carrefour: ValueError: Categoria regulada/não alimentícia excluída do coletor",
-    "produto carrefour: ValueError: Categoria regulada/não alimentícia excluída do coletor"
+    "produto carrefour: ValueError: Embalagem ambígua (nenhuma ou várias quantidades)"
   ],
   "nota": "Redes candidatas NÃO são mercados com preços disponíveis. Preços online, sujeitos a loja/CEP. Bloqueio, ausência de preço e estoque desconhecido nunca geram ofertas fictícias."
 }

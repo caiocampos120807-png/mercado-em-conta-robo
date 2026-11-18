@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "gerado_em_utc": "2026-11-18T23:51:15+00:00",
+  "data_referencia": "2026-11-18",
+  "ofertas_validadas": 267,
+  "produtos_distintos_total": 252,
+  "mercados_com_precos": 4,
+  "comparacoes_possiveis_por_cidade": 3,
+  "cidades": [
+    {
+      "cidade": "São Paulo / SP",
+      "mercados_com_preco": 4,
+      "produtos_distintos": 252,
+      "produtos_comparaveis": 3,
+      "ofertas": 267,
+      "mercados": [
+        {
+          "nome": "Carrefour (online)",
+          "skus": 95
+        },
+        {
+          "nome": "Extra Mercado (online)",
+          "skus": 3
+        },
+        {
+          "nome": "Pão de Açúcar (online)",
+          "skus": 3
+        },
+        {
+          "nome": "Sonda (online)",
+          "skus": 159
+        }
+      ]
+    }
+  ],
+  "mercados": [
+    {
+      "nome": "Sonda (online)",
+      "ofertas": 160
+    },
+    {
+      "nome": "Carrefour (online)",
+      "ofertas": 101
+    },
+    {
+      "nome": "Extra Mercado (online)",
+      "ofertas": 3
+    },
+    {
+      "nome": "Pão de Açúcar (online)",
+      "ofertas": 3
+    }
+  ],
+  "categorias": [
+    {
+      "nome": "Mercearia",
+      "ofertas": 131
+    },
+    {
+      "nome": "Carnes",
+      "ofertas": 75
+    },
+    {
+      "nome": "Laticínios",
+      "ofertas": 23
+    },
+    {
+      "nome": "Higiene",
+      "ofertas": 15
+    },
+    {
+      "nome": "Hortifruti",
+      "ofertas": 10
+    },
+    {
+      "nome": "Limpeza",
+      "ofertas": 7
+    },
+    {
+      "nome": "Bebidas",
+      "ofertas": 6
+    }
+  ],
+  "registros_rejeitados": 0,
+  "limites": "Métricas de catálogo, não de usuários. Não incluem preços sem confirmação ou antigos. Comparáveis exigem mesmo SKU e mesma cidade."
+}
