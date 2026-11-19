@@ -61,7 +61,24 @@ def sku_key(row):
     return '|'.join([normal(row['produto']),normal(row['marca']),kind,format(qty,'.9g')])
 
 
-def audit_row(row, today=None):
+def authorized_hosts(base=BASE, extra=()):
+    """Hosts de links oficiais informados apenas por feeds parceiros ativos/autorizados."""
+    hosts=set(ALLOWED)
+    path=Path(base or BASE)/'parceiros-fontes.json'
+    try:
+        config=json.loads(path.read_text(encoding='utf-8'))
+        for p in config.get('parceiros',[]):
+            if p.get('ativo') is True and p.get('autorizado') is True:
+                for host in p.get('dominios_produtos',[]):
+                    if isinstance(host,str) and host and host==host.lower() and '/' not in host and ':' not in host:
+                        hosts.add(host)
+    except (ValueError,OSError,TypeError,AttributeError):
+        pass
+    hosts.update(extra)
+    return hosts
+
+
+def audit_row(row, today=None, hosts=None):
     now = today or date.today()
     if not FIELDS.issubset(row):
         return None, 'campos ausentes'
@@ -80,7 +97,7 @@ def audit_row(row, today=None):
     if u not in UNITS or quantity(row['tamanho'],u) is None:
         return None, 'embalagem inválida'
     url = urlsplit(str(row['link']))
-    if url.scheme != 'https' or url.hostname not in ALLOWED or url.username or url.password or url.port:
+    if url.scheme != 'https' or url.hostname not in (hosts if hosts is not None else ALLOWED) or url.username or url.password or url.port:
         return None, 'fonte não autorizada'
     if len(str(row['produto'])) > 240 or len(str(row['marca'])) > 150:
         return None, 'título excessivo'
@@ -108,8 +125,9 @@ def run(base=BASE, today=None):
         input_rows=list(reader)
     unique={}
     errors=defaultdict(int)
+    trusted_hosts=authorized_hosts(base)
     for row in input_rows:
-        valid, reason=audit_row(row,today)
+        valid, reason=audit_row(row,today,trusted_hosts)
         if not valid:
             errors[reason]+=1
             continue

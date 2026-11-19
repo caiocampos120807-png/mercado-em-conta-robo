@@ -1,0 +1,14 @@
+{
+  "leia_antes": "EXEMPLO APENAS: não cole endereços fictícios na lista de parceiros ativos.",
+  "parceiros": [
+    {
+      "mercado": "NOME EXATO DO MERCADO",
+      "cidade": "São Paulo",
+      "uf": "SP",
+      "url_csv": "https://docs.google.com/spreadsheets/d/e/ID-REAL/pub?output=csv",
+      "dominios_produtos": ["www.site-oficial-do-mercado.example"],
+      "autorizado": false,
+      "ativo": false
+    }
+  ]
+}

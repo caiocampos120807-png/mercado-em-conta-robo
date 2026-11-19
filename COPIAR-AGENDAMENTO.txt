@@ -1,0 +1,70 @@
+name: Atualizar preços de supermercado
+
+on:
+  workflow_dispatch:
+  schedule:
+    # UTC: 09h17 e 21h17. Em Brasília: ~06h17 e ~18h17.
+    - cron: '17 9,21 * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: mercado-precos
+  cancel-in-progress: false
+
+jobs:
+  coletar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 39
+    steps:
+      - name: Baixar projeto
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Preparar Python gratuito
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Testar todo o robô
+        run: python -m unittest discover -s tests -v
+
+      - name: Coletar as fontes originais
+        run: python coletar.py
+
+      - name: Descobrir catálogo Pão de Açúcar e Sonda
+        run: python expandir_catalogo.py
+
+      - name: Buscar preços em redes adicionais
+        run: python integrar_redes.py
+
+      - name: Importar catálogos de supermercados parceiros autorizados
+        run: python coletar_parceiros.py
+
+      - name: Atualizar histórico e indicadores
+        run: python gerar_indicadores.py
+
+      - name: Gerar relatório de cobertura comercial verificável
+        run: python relatorio_negocio.py
+
+      - name: Gerar comparações locais compartilháveis
+        run: python destaques.py
+
+      - name: Auditar cobertura e falhas sem inventar dados
+        if: always()
+        run: python saude_operacional.py
+
+      - name: Impedir publicação de coleta catastrófica
+        run: python avaliar_publicacao.py
+
+      - name: Salvar resultados sem gerar preços falsos
+        run: |
+          git config user.name 'mercado-em-conta-bot'
+          git config user.email 'mercado-em-conta-bot@users.noreply.github.com'
+          git add precos.csv status.json catalogo.json historico.json indicadores.json catalogo_redes.json redes-status.json relatorio_negocio.json destaques.json boletim-compartilhavel.md saude_operacional.json parceiros-status.json validacao_publicacao.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Atualizar precos e cobertura de redes'
+            git push
+          fi

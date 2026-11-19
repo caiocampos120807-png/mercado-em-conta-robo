@@ -10,7 +10,7 @@ import json
 from collections import defaultdict, Counter
 from datetime import date, datetime, timezone
 from pathlib import Path
-from gerar_indicadores import audit_row, sku_key
+from gerar_indicadores import audit_row, sku_key, authorized_hosts
 
 BASE = Path(__file__).resolve().parent
 
@@ -23,10 +23,11 @@ def construir(base=BASE, hoje=None):
         raise FileNotFoundError('precos.csv não encontrado')
     with path.open(newline='',encoding='utf-8-sig') as f:
         raw=list(csv.DictReader(f))
+    trusted_hosts=authorized_hosts(base)
     valid=[]
     invalid=Counter()
     for r in raw:
-        row,reason=audit_row(r,hoje)
+        row,reason=audit_row(r,hoje,trusted_hosts)
         if row:valid.append(row)
         else:invalid[reason]+=1
     # Colisões no mesmo URL não viram duas ofertas distintas.
