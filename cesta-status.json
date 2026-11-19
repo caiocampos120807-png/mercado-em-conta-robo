@@ -1,9 +1,9 @@
 {
-  "atualizado_utc": "2026-11-19T10:19:34+00:00",
-  "ofertas_ativas": 368,
-  "produtos_arquivados": 368,
-  "registrados_antes": 337,
-  "novos_links_confirmados": 31,
+  "atualizado_utc": "2026-11-19T22:11:56+00:00",
+  "ofertas_ativas": 385,
+  "produtos_arquivados": 385,
+  "registrados_antes": 368,
+  "novos_links_confirmados": 17,
   "prioridades_familia_4": [
     {
       "item": "Arroz",
@@ -42,12 +42,12 @@
     },
     {
       "item": "Frango",
-      "ofertas": 69,
+      "ofertas": 70,
       "mercados": 2
     },
     {
       "item": "Carne bovina",
-      "ofertas": 13,
+      "ofertas": 17,
       "mercados": 2
     },
     {

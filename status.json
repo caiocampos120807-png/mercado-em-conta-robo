@@ -1,35 +1,46 @@
 {
-  "ultima_execucao_utc": "2026-11-19T10:19:33+00:00",
+  "ultima_execucao_utc": "2026-11-19T22:11:56+00:00",
   "fontes_configuradas": 6,
-  "precos_coletados": 368,
+  "precos_coletados": 383,
   "fontes_indisponiveis": 0,
   "avisos": [],
   "nota": "Quantidade de URLs descobertas não equivale a ofertas: só contam preços de página confirmada nos últimos três dias corridos (hoje e dois dias anteriores). Apenas preços online, sujeitos a CEP e disponibilidade; não reproduzir como preço de loja física.",
   "modo": "catalogo_incremental",
-  "urls_catalogo": 216,
-  "paginas_listagem": 705,
-  "novos_links_descobertos": 19,
+  "urls_catalogo": 239,
+  "paginas_listagem": 726,
+  "novos_links_descobertos": 23,
   "paginas_consultadas": 8,
-  "produtos_consultados_nesta_expansao": 10,
-  "ofertas_atualizadas_hoje": 51,
-  "fontes_indisponiveis_nesta_expansao": 6,
+  "produtos_consultados_nesta_expansao": 180,
+  "ofertas_atualizadas_hoje": 201,
+  "fontes_indisponiveis_nesta_expansao": 17,
   "avisos_expansao": [
-    "produto: https://www.sondadelivery.com.br/delivery/produto/paleta-pedaco-15kg/1000036516: ValueError: Produto exato não encontrado no título da página (marca/embalagem)",
-    "produto: https://www.sondadelivery.com.br/delivery/produto/picanha-bassi-12kg/1000044774: ValueError: Produto exato não encontrado no título da página (marca/embalagem)",
-    "produto: https://www.sondadelivery.com.br/delivery/produto/picanha-naturafrig-106kg/1000044784: ValueError: Produto exato não encontrado no título da página (marca/embalagem)",
-    "produto: https://www.sondadelivery.com.br/delivery/produto/picanha-naturafrig-fatiada-11kg/1000036648: ValueError: Produto exato não encontrado no título da página (marca/embalagem)",
-    "produto: https://www.sondadelivery.com.br/delivery/produto/rabo-1kg/1000036527: ValueError: Título e embalagem não foram confirmados na página de produto",
-    "produto: https://www.sondadelivery.com.br/delivery/produto/rins-1kg/1000036528: ValueError: Título e embalagem não foram confirmados na página de produto"
+    "produto: https://www.sondadelivery.com.br/delivery/produto/acem-pedaco-15kg/1000036470: ValueError: Produto exato não encontrado no título da página (marca/embalagem)",
+    "produto: https://www.sondadelivery.com.br/delivery/produto/figado-de-frango-12kg/1000036714: ValueError: Produto exato não encontrado no título da página (marca/embalagem)",
+    "produto: https://www.sondadelivery.com.br/delivery/produto/coxao-mole-pedaco-15kg/1000036495: ValueError: Produto exato não encontrado no título da página (marca/embalagem)",
+    "produto: https://www.sondadelivery.com.br/delivery/produto/acai-com-banana-sport-11kg/1000052921: ValueError: Produto exato não encontrado no título da página (marca/embalagem)",
+    "produto: https://www.sondadelivery.com.br/delivery/produto/alho-picado-daucy-congelado-102kg/1000050653: ValueError: Produto exato não encontrado no título da página (marca/embalagem)",
+    "produto: https://www.sondadelivery.com.br/delivery/produto/carre-suino-com-costela-resfriada-15kg/1000036597: ValueError: Produto exato não encontrado no título da página (marca/embalagem)",
+    "produto: https://www.sondadelivery.com.br/delivery/produto/costela-suina-prieto-11kg/1000036828: ValueError: Produto exato não encontrado no título da página (marca/embalagem)",
+    "produto: https://www.sondadelivery.com.br/delivery/produto/costela-suina-temperada-sadia-suino-facil-congelada-kg/1000038600: ValueError: Título e embalagem não foram confirmados na página de produto",
+    "produto: https://www.sondadelivery.com.br/delivery/produto/cupim-15kg/1000036497: ValueError: Título e embalagem não foram confirmados na página de produto",
+    "produto: https://www.sondadelivery.com.br/delivery/produto/file-mignon-sem-cordao-peca-a-vacuo-15kg/1000057261: ValueError: Produto exato não encontrado no título da página (marca/embalagem)",
+    "produto: https://www.sondadelivery.com.br/delivery/produto/lombo-suino-sadia-sem-osso-congelado/1000044013: ValueError: Título e embalagem não foram confirmados na página de produto",
+    "produto: https://www.sondadelivery.com.br/delivery/produto/abacaxi-perola-doce-mel-unidade/1000010358: ValueError: Título e embalagem não foram confirmados na página de produto",
+    "produto: https://www.sondadelivery.com.br/delivery/produto/abacaxi-perola-unidade/1000010359: ValueError: Título e embalagem não foram confirmados na página de produto",
+    "produto: https://www.sondadelivery.com.br/delivery/produto/abobora-moranga-amarela-15kg/41689: ValueError: Produto exato não encontrado no título da página (marca/embalagem)",
+    "produto: https://www.sondadelivery.com.br/delivery/produto/acai-com-morango-sport-11kg/1000052922: ValueError: Produto exato não encontrado no título da página (marca/embalagem)",
+    "produto: https://www.sondadelivery.com.br/delivery/produto/acai-guarana-frooty-15-litros/1000031741: ValueError: Produto exato não encontrado no título da página (marca/embalagem)",
+    "produto: https://www.sondadelivery.com.br/delivery/produto/acai-original-com-guarana-acahi-pote-15l/1000049692: ValueError: Produto exato não encontrado no título da página (marca/embalagem)"
   ],
   "redes_adicionais": {
-    "gerado_em_utc": "2026-11-19T10:19:33+00:00",
+    "gerado_em_utc": "2026-11-19T22:11:56+00:00",
     "redes_candidatas": 6,
-    "novos_links_descobertos": 132,
-    "paginas_listagem_consultadas": 14,
-    "paginas_produto_consultadas": 24,
-    "ofertas_na_lista": 8,
-    "ofertas_na_pagina": 18,
-    "precos_ativos_total": 368,
+    "novos_links_descobertos": 12,
+    "paginas_listagem_consultadas": 1,
+    "paginas_produto_consultadas": 78,
+    "ofertas_na_lista": 0,
+    "ofertas_na_pagina": 74,
+    "precos_ativos_total": 383,
     "redes": {
       "extra": {
         "nome": "Extra Mercado (online)",
@@ -41,7 +52,7 @@
       "carrefour": {
         "nome": "Carrefour (online)",
         "urls_descobertas": 197,
-        "precos_validos": 160,
+        "precos_validos": 159,
         "estado": "com preços confirmados",
         "localizacao_exigida": false
       },
@@ -61,7 +72,7 @@
       },
       "paguemenos": {
         "nome": "Supermercados Pague Menos (online)",
-        "urls_descobertas": 155,
+        "urls_descobertas": 167,
         "precos_validos": 0,
         "estado": "sem preço confirmado",
         "localizacao_exigida": true
@@ -75,13 +86,10 @@
       }
     },
     "avisos": [
-      "listagem paguemenos: HTTPError: HTTP Error 404: Not Found",
+      "produto extra: ValueError: Preço indisponível",
       "produto carrefour: ValueError: Embalagem ambígua (nenhuma ou várias quantidades)",
-      "produto carrefour: ValueError: Embalagem ambígua (nenhuma ou várias quantidades)",
-      "produto carrefour: ValueError: Kit ou múltiplas embalagens não comparáveis com segurança",
-      "produto carrefour: ValueError: Kit ou múltiplas embalagens não comparáveis com segurança",
-      "produto carrefour: ValueError: Kit ou múltiplas embalagens não comparáveis com segurança",
-      "produto carrefour: ValueError: Kit ou múltiplas embalagens não comparáveis com segurança"
+      "produto carrefour: HTTPError: HTTP Error 404: Not Found",
+      "produto carrefour: ValueError: Oferta JSON-LD sem título do produto visível"
     ],
     "nota": "Redes candidatas NÃO são mercados com preços disponíveis. Preços online, sujeitos a loja/CEP. Bloqueio, ausência de preço e estoque desconhecido nunca geram ofertas fictícias."
   }

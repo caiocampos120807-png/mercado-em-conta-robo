@@ -1,13 +1,13 @@
 {
   "schema": 1,
-  "gerado_em_utc": "2026-11-19T10:19:34+00:00",
+  "gerado_em_utc": "2026-11-19T22:11:56+00:00",
   "data_referencia": "2026-11-19",
   "estado": "operacional",
-  "ofertas_lidas": 368,
-  "ofertas_validas": 368,
+  "ofertas_lidas": 385,
+  "ofertas_validas": 385,
   "ofertas_rejeitadas": 0,
   "motivos_rejeicao": {},
-  "produtos_distintos": 352,
+  "produtos_distintos": 369,
   "redes_ativas": 4,
   "cidades_com_oferta": 1,
   "produtos_comparaveis_mesma_cidade": 4,
@@ -15,13 +15,13 @@
     "São Paulo / SP": 4
   },
   "ofertas_por_data": {
-    "2026-11-18": 258,
-    "2026-11-19": 110
+    "2026-11-18": 51,
+    "2026-11-19": 334
   },
   "redes": [
     {
       "nome": "Sonda (online)",
-      "ofertas": 202,
+      "ofertas": 219,
       "cidades": 1,
       "preco_mais_recente": "2026-11-19"
     },
@@ -35,7 +35,7 @@
       "nome": "Extra Mercado (online)",
       "ofertas": 3,
       "cidades": 1,
-      "preco_mais_recente": "2026-11-18"
+      "preco_mais_recente": "2026-11-19"
     },
     {
       "nome": "Pão de Açúcar (online)",
@@ -44,7 +44,7 @@
       "preco_mais_recente": "2026-11-19"
     }
   ],
-  "queda_vs_anterior_percentual": -9.2,
+  "queda_vs_anterior_percentual": -4.6,
   "avisos": [],
   "nota": "Mede somente cobertura de dados públicos validados. Não mede visitantes, cliques de outros usuários, faturamento, estoque nem autorização comercial de uso."
 }

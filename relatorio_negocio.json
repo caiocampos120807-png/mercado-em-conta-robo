@@ -1,18 +1,18 @@
 {
   "schema": 1,
-  "gerado_em_utc": "2026-11-19T10:19:34+00:00",
+  "gerado_em_utc": "2026-11-19T22:11:56+00:00",
   "data_referencia": "2026-11-19",
-  "ofertas_validadas": 368,
-  "produtos_distintos_total": 352,
+  "ofertas_validadas": 385,
+  "produtos_distintos_total": 369,
   "mercados_com_precos": 4,
   "comparacoes_possiveis_por_cidade": 4,
   "cidades": [
     {
       "cidade": "São Paulo / SP",
       "mercados_com_preco": 4,
-      "produtos_distintos": 352,
+      "produtos_distintos": 369,
       "produtos_comparaveis": 4,
-      "ofertas": 368,
+      "ofertas": 385,
       "mercados": [
         {
           "nome": "Carrefour (online)",
@@ -28,7 +28,7 @@
         },
         {
           "nome": "Sonda (online)",
-          "skus": 201
+          "skus": 218
         }
       ]
     }
@@ -36,7 +36,7 @@
   "mercados": [
     {
       "nome": "Sonda (online)",
-      "ofertas": 202
+      "ofertas": 219
     },
     {
       "nome": "Carrefour (online)",
@@ -54,11 +54,11 @@
   "categorias": [
     {
       "nome": "Mercearia",
-      "ofertas": 172
+      "ofertas": 180
     },
     {
       "nome": "Carnes",
-      "ofertas": 99
+      "ofertas": 108
     },
     {
       "nome": "Laticínios",
