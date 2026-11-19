@@ -22,6 +22,7 @@ from urllib.error import HTTPError, URLError
 from urllib.parse import urljoin, urlsplit, urlunsplit, unquote
 
 import coletar
+from cesta_familia import score_product
 
 ROOT = Path(__file__).resolve().parent
 FIELDS = coletar.FIELDS
@@ -464,7 +465,8 @@ def run(config_path=None, base=None, client=None):
     base_rows = [r for r in read_csv(base / 'precos.csv') if r.get('link') in fixed_urls]
     base_urls = {r['link'] for r in base_rows}
     # Intercala mercados para milhares de URLs de uma rede não impedirem a outra.
-    candidates = sorted(products, key=lambda u:(parse_when(products[u].get('ultima_consulta')), u))
+    known_prices = read_csv(base/'precos.csv')
+    candidates = sorted(products, key=lambda u:(-score_product(u, {'row':products[u].get('registro')}, known_prices), parse_when(products[u].get('ultima_consulta')), u))
     left = [u for u in candidates if urlsplit(u).hostname == 'www.paodeacucar.com']
     right = [u for u in candidates if urlsplit(u).hostname == 'www.sondadelivery.com.br']
     due = [u for pair in itertools.zip_longest(left, right) for u in pair if u]

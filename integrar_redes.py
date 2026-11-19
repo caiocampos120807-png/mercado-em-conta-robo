@@ -27,6 +27,7 @@ from urllib.robotparser import RobotFileParser
 
 import coletar
 import expandir_catalogo as exp
+from cesta_familia import score_product
 
 ROOT = Path(__file__).resolve().parent
 FIELDS = coletar.FIELDS
@@ -36,6 +37,8 @@ NETWORKS = {
     'mercado.carrefour.com.br': 'carrefour',
     'www.atacadao.com.br': 'atacadao',
     'www.mambo.com.br': 'mambo',
+    'www.supermercadospaguemenos.com.br': 'paguemenos',
+    'www.savegnago.com.br': 'savegnago',
 }
 MAX_HTML = 3_000_000
 RE_PRICE = re.compile(r'R\$\s*([1-9]\d{0,3}(?:\.\d{3})*,\d{2})', re.I)
@@ -70,6 +73,8 @@ def safe_url(raw, base='', kind='product'):
             'carrefour': r'/produto/[\w\-]+/?',
             'atacadao': r'/(?:produto|p)/[\w\-]+/?',
             'mambo': r'/[\w\-]+/p/?',
+            'paguemenos': r'/[\w\-]+/p/?',
+            'savegnago': r'/[\w\-]+/p/?',
         }
         if not re.fullmatch(patterns[NETWORKS[host]], path, flags=re.I):
             return None
@@ -79,6 +84,8 @@ def safe_url(raw, base='', kind='product'):
             'carrefour': r'/(?:categoria/[\w\-/]+|marca/[\w\-]+)',
             'atacadao': r'/(?:mercearia(?:/[\w\-]+){0,3}|catalogo)',
             'mambo': r'/(?:[\w\-]+)',
+            'paguemenos': r'/(?:mercearia|limpeza|congelados|perfumaria|hortifruti|acougue|bebidas|frios-e-laticinios)(?:/[\w\-]+){0,5}',
+            'savegnago': r'/(?:mercearia|limpeza|laticinios|hortifruti|acougue|bebidas|frios-e-congelados|perfumaria-e-beleza)(?:/[\w\-]+){0,5}',
         }
         if not re.fullmatch(patterns[NETWORKS[host]], path.rstrip('/'), flags=re.I):
             return None
@@ -329,6 +336,33 @@ def listing_offers(page, network,city,uf):
             else: found[url]=row
         except (TypeError, ValueError, KeyError):
             continue
+    # Algumas lojas publicam o preço em JSON-LD Product/Offer. Usar somente
+    # se o produto estiver VISÍVEL como link da listagem, URL e moeda coincidirem,
+    # e a rede tiver localização confirmada. Nunca estimar preço a partir de desconto.
+    conflicted=set()
+    for raw in page.ld:
+        try: root=json.loads(raw)
+        except (TypeError,json.JSONDecodeError): continue
+        for prod in iter_products(root):
+            if not isinstance(prod,dict) or not prod.get('url'):continue
+            url=safe_url(prod['url'],page.source,'product')
+            if not url or url not in page.links or urlsplit(url).hostname!=network['host']:continue
+            offers=prod.get('offers',[])
+            options=[]
+            for offer in offers if isinstance(offers,list) else [offers]:
+                if not isinstance(offer,dict):continue
+                if str(offer.get('priceCurrency','BRL')).upper()!='BRL':continue
+                avail=str(offer.get('availability','')).lower()
+                if any(k in avail for k in ('outofstock','discontinued','soldout')):continue
+                price=coletar.br_price(offer.get('price'))
+                if price is not None:options.append(price)
+            if len(set(options))!=1 or not options:continue
+            try:row=record(str(prod.get('name','')),options[0],url,network,city,uf)
+            except (TypeError,ValueError,KeyError):continue
+            if url in found and found[url]['preco']!=row['preco']:
+                found.pop(url,None);conflicted.add(url)
+            elif url not in conflicted:
+                found[url]=row
     return found
 
 
@@ -404,14 +438,17 @@ def stamp():return utcnow().isoformat(timespec='seconds')
 def when(raw):return exp.parse_when(raw)
 
 
-def fair_queue(entries):
+def fair_queue(entries, priority=None):
     """Round-robin by network, oldest-first within each network."""
     queues=defaultdict(list)
     for url, data in entries.items():
         host=urlsplit(url).hostname
         if host in NETWORKS: queues[host].append((when(data.get('last','')),url))
     for host, v in list(queues.items()):
-        v.sort()
+        if priority:
+            v.sort(key=lambda x:(-priority(x[1],entries[x[1]]),x[0],x[1]))
+        else:
+            v.sort()
         queues[host]=deque(v)
     results=[]
     while any(queues.values()):
@@ -481,7 +518,8 @@ def run(base=ROOT, config_path=None, client=None):
             entry['fail']=min(1000,int(entry.get('fail',0))+1)
             if len(errors)<45:errors.append(f'listagem {NETWORKS.get(host,host)}: {type(e).__name__}: {str(e)[:110]}')
         finally:entry['last']=stamp()
-    for url in fair_queue(products):
+    previous_prices=exp.read_csv(base/'precos.csv')
+    for url in fair_queue(products, priority=lambda u, entry:score_product(u,entry,previous_prices)):
         if detail_calls>=max_products or time.monotonic()-started>max_time:break
         host=urlsplit(url).hostname
         if host not in networks:continue

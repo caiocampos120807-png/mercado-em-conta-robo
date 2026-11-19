@@ -1,10 +1,10 @@
 {
-  "versao": 1,
+  "versao": 2,
   "cidade_online": "São Paulo",
   "uf_online": "SP",
   "limites": {
-    "paginas_listagem_por_execucao": 12,
-    "paginas_produto_por_execucao": 65,
+    "paginas_listagem_por_execucao": 14,
+    "paginas_produto_por_execucao": 78,
     "max_links_por_rede": 6000,
     "intervalo_minimo_por_dominio_segundos": 4,
     "max_duracao_minutos": 10,
@@ -45,7 +45,10 @@
         "https://mercado.carrefour.com.br/marca/parmalat",
         "https://mercado.carrefour.com.br/categoria/hortifruti",
         "https://mercado.carrefour.com.br/categoria/bebidas",
-        "https://mercado.carrefour.com.br/marca/carrefour"
+        "https://mercado.carrefour.com.br/marca/carrefour",
+        "https://mercado.carrefour.com.br/categoria/mercearia",
+        "https://mercado.carrefour.com.br/categoria/limpeza-e-lavanderia/",
+        "https://mercado.carrefour.com.br/categoria/higiene-e-perfumaria/cuidados-pessoais/papel-higienico"
       ],
       "produtos_iniciais": [
         "https://mercado.carrefour.com.br/produto/arroz-branco-camil-tipo-kg-1970",
@@ -74,6 +77,36 @@
         "https://www.mambo.com.br/ofertas"
       ],
       "produtos_iniciais": []
+    },
+    {
+      "id": "paguemenos",
+      "nome": "Supermercados Pague Menos (online)",
+      "host": "www.supermercadospaguemenos.com.br",
+      "localizacao_confirmada": false,
+      "nota_localidade": "O site solicita CEP. Nunca anunciar como preço de São Paulo sem identificação de loja e cidade.",
+      "listagens": [
+        "https://www.supermercadospaguemenos.com.br/mercearia/alimentos-basicos",
+        "https://www.supermercadospaguemenos.com.br/mercearia/alimentos-basicos/farinha",
+        "https://www.supermercadospaguemenos.com.br/mercearia",
+        "https://www.supermercadospaguemenos.com.br/congelados"
+      ],
+      "produtos_iniciais": [
+        "https://www.supermercadospaguemenos.com.br/arroz-camil-tipo-1-selecao-especial-5kg-2004025019/p"
+      ]
+    },
+    {
+      "id": "savegnago",
+      "nome": "Savegnago (online)",
+      "host": "www.savegnago.com.br",
+      "localizacao_confirmada": false,
+      "nota_localidade": "Atende múltiplas cidades. Confirmar loja/CEP antes de adicionar ofertas ao comparador de uma cidade.",
+      "listagens": [
+        "https://www.savegnago.com.br/mercearia/graos-e-cereais"
+      ],
+      "produtos_iniciais": [
+        "https://www.savegnago.com.br/arroz-agulhinha-camil-5kg-tipo-1/p",
+        "https://www.savegnago.com.br/arroz-agulh-camil-1kg-tp1/p"
+      ]
     }
   ]
 }

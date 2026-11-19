@@ -43,6 +43,9 @@ jobs:
       - name: Importar catálogos de supermercados parceiros autorizados
         run: python coletar_parceiros.py
 
+      - name: Preservar ofertas verificadas ainda recentes e inventário histórico
+        run: python preservar_precos.py
+
       - name: Atualizar histórico e indicadores
         run: python gerar_indicadores.py
 
@@ -63,7 +66,7 @@ jobs:
         run: |
           git config user.name 'mercado-em-conta-bot'
           git config user.email 'mercado-em-conta-bot@users.noreply.github.com'
-          git add precos.csv status.json catalogo.json historico.json indicadores.json catalogo_redes.json redes-status.json relatorio_negocio.json destaques.json boletim-compartilhavel.md saude_operacional.json parceiros-status.json validacao_publicacao.json
+          git add precos.csv catalogo_historico.csv cesta-status.json status.json catalogo.json historico.json indicadores.json catalogo_redes.json redes-status.json relatorio_negocio.json destaques.json boletim-compartilhavel.md saude_operacional.json parceiros-status.json validacao_publicacao.json
           if ! git diff --cached --quiet; then
             git commit -m 'Atualizar precos e cobertura de redes'
             git push
