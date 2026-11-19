@@ -1,0 +1,150 @@
+{
+  "atualizado_utc": "2026-11-19T02:23:31+00:00",
+  "ofertas_ativas": 337,
+  "produtos_arquivados": 337,
+  "registrados_antes": 295,
+  "novos_links_confirmados": 42,
+  "prioridades_familia_4": [
+    {
+      "item": "Arroz",
+      "ofertas": 26,
+      "mercados": 4
+    },
+    {
+      "item": "Feijão",
+      "ofertas": 17,
+      "mercados": 4
+    },
+    {
+      "item": "Leite UHT",
+      "ofertas": 25,
+      "mercados": 3
+    },
+    {
+      "item": "Café",
+      "ofertas": 2,
+      "mercados": 2
+    },
+    {
+      "item": "Açúcar",
+      "ofertas": 1,
+      "mercados": 1
+    },
+    {
+      "item": "Macarrão",
+      "ofertas": 2,
+      "mercados": 1
+    },
+    {
+      "item": "Ovos",
+      "ofertas": 3,
+      "mercados": 1
+    },
+    {
+      "item": "Frango",
+      "ofertas": 68,
+      "mercados": 2
+    },
+    {
+      "item": "Carne bovina",
+      "ofertas": 13,
+      "mercados": 2
+    },
+    {
+      "item": "Sal",
+      "ofertas": 1,
+      "mercados": 1
+    },
+    {
+      "item": "Farinha de trigo",
+      "ofertas": 1,
+      "mercados": 1
+    },
+    {
+      "item": "Molho de tomate",
+      "ofertas": 2,
+      "mercados": 1
+    },
+    {
+      "item": "Pão de forma",
+      "ofertas": 4,
+      "mercados": 1
+    },
+    {
+      "item": "Queijo",
+      "ofertas": 1,
+      "mercados": 1
+    },
+    {
+      "item": "Iogurte",
+      "ofertas": 2,
+      "mercados": 1
+    },
+    {
+      "item": "Cebola",
+      "ofertas": 2,
+      "mercados": 1
+    },
+    {
+      "item": "Tomate",
+      "ofertas": 2,
+      "mercados": 1
+    },
+    {
+      "item": "Alho",
+      "ofertas": 3,
+      "mercados": 1
+    },
+    {
+      "item": "Banana",
+      "ofertas": 1,
+      "mercados": 1
+    },
+    {
+      "item": "Laranja",
+      "ofertas": 1,
+      "mercados": 1
+    },
+    {
+      "item": "Cenoura",
+      "ofertas": 1,
+      "mercados": 1
+    },
+    {
+      "item": "Papel higiênico",
+      "ofertas": 2,
+      "mercados": 1
+    },
+    {
+      "item": "Detergente",
+      "ofertas": 3,
+      "mercados": 1
+    },
+    {
+      "item": "Sabão em pó ou líquido",
+      "ofertas": 5,
+      "mercados": 1
+    },
+    {
+      "item": "Água sanitária",
+      "ofertas": 8,
+      "mercados": 2
+    },
+    {
+      "item": "Amaciante",
+      "ofertas": 1,
+      "mercados": 1
+    },
+    {
+      "item": "Biscoito",
+      "ofertas": 1,
+      "mercados": 1
+    },
+    {
+      "item": "Aveia",
+      "ofertas": 1,
+      "mercados": 1
+    }
+  ],
+  "aviso": "Catálogo histórico inclui preços vencidos; somente precos.csv contém ofertas recentes. Preços antigos não são atualizados artificialmente."
+}
