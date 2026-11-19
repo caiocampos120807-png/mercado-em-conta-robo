@@ -1,9 +1,9 @@
 {
-  "atualizado_utc": "2026-11-19T02:23:31+00:00",
-  "ofertas_ativas": 337,
-  "produtos_arquivados": 337,
-  "registrados_antes": 295,
-  "novos_links_confirmados": 42,
+  "atualizado_utc": "2026-11-19T10:19:34+00:00",
+  "ofertas_ativas": 368,
+  "produtos_arquivados": 368,
+  "registrados_antes": 337,
+  "novos_links_confirmados": 31,
   "prioridades_familia_4": [
     {
       "item": "Arroz",
@@ -42,7 +42,7 @@
     },
     {
       "item": "Frango",
-      "ofertas": 68,
+      "ofertas": 69,
       "mercados": 2
     },
     {
@@ -112,7 +112,7 @@
     },
     {
       "item": "Papel higiênico",
-      "ofertas": 2,
+      "ofertas": 3,
       "mercados": 1
     },
     {
@@ -133,6 +133,11 @@
     {
       "item": "Amaciante",
       "ofertas": 1,
+      "mercados": 1
+    },
+    {
+      "item": "Pasta de dente",
+      "ofertas": 3,
       "mercados": 1
     },
     {
