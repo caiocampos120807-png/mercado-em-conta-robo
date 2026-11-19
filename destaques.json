@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "gerado_em_utc": "2026-11-19T01:24:54+00:00",
+  "data_referencia": "2026-11-19",
+  "comparacoes": [
+    {
+      "sku": "arroz branco|camil|massa|5000",
+      "cidade": "São Paulo / SP",
+      "produto": "Arroz branco",
+      "marca": "Camil",
+      "tamanho": "5",
+      "unidade": "kg",
+      "preco_menor": 26.18,
+      "mercado_menor": "Carrefour (online)",
+      "link_menor": "https://mercado.carrefour.com.br/produto/arroz-branco-camil-tipo-1-5kg-1970",
+      "preco_maior": 34.64,
+      "mercado_maior": "Sonda (online)",
+      "link_maior": "https://www.sondadelivery.com.br/delivery/produto/arroz-branco-camil-5kg/1000001195",
+      "diferenca": 8.46,
+      "quantidade_mercados": 4,
+      "atualizado": "2026-11-18"
+    },
+    {
+      "sku": "feijao carioca|camil|massa|1000",
+      "cidade": "São Paulo / SP",
+      "produto": "Feijão carioca",
+      "marca": "Camil",
+      "tamanho": "1",
+      "unidade": "kg",
+      "preco_menor": 7.59,
+      "mercado_menor": "Carrefour (online)",
+      "link_menor": "https://mercado.carrefour.com.br/produto/feijao-carioca-camil-1kg-2927",
+      "preco_maior": 10.99,
+      "mercado_maior": "Sonda (online)",
+      "link_maior": "https://www.sondadelivery.com.br/delivery/produto/feijao-carioca-camil--1kg/1000001726",
+      "diferenca": 3.4,
+      "quantidade_mercados": 4,
+      "atualizado": "2026-11-18"
+    },
+    {
+      "sku": "leite integral|parmalat|volume|1000",
+      "cidade": "São Paulo / SP",
+      "produto": "Leite integral",
+      "marca": "Parmalat",
+      "tamanho": "1",
+      "unidade": "l",
+      "preco_menor": 4.19,
+      "mercado_menor": "Carrefour (online)",
+      "link_menor": "https://mercado.carrefour.com.br/produto/leite-integral-uht-tipo-a-parmalat-1-litro-2051",
+      "preco_maior": 7.29,
+      "mercado_maior": "Pão de Açúcar (online)",
+      "link_maior": "https://www.paodeacucar.com/produto/97827/leite-longa-vida-integral-parmalat-1-litro",
+      "diferenca": 3.1,
+      "quantidade_mercados": 3,
+      "atualizado": "2026-11-18"
+    }
+  ],
+  "cidades": [
+    {
+      "cidade": "São Paulo / SP",
+      "comparacoes_com_diferenca": 3
+    }
+  ],
+  "ofertas_rejeitadas": 0,
+  "observacao": "Diferença entre preços coletados no mesmo dia ou nos dois dias anteriores, para o mesmo produto, marca e embalagem na mesma cidade. Não é desconto nem economia garantida. Pode depender de CEP, estoque e fidelidade."
+}

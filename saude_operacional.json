@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "gerado_em_utc": "2026-11-19T01:24:54+00:00",
+  "data_referencia": "2026-11-19",
+  "estado": "operacional",
+  "ofertas_lidas": 295,
+  "ofertas_validas": 295,
+  "ofertas_rejeitadas": 0,
+  "motivos_rejeicao": {},
+  "produtos_distintos": 280,
+  "redes_ativas": 4,
+  "cidades_com_oferta": 1,
+  "produtos_comparaveis_mesma_cidade": 3,
+  "comparacoes_por_cidade": {
+    "São Paulo / SP": 3
+  },
+  "ofertas_por_data": {
+    "2026-11-18": 259,
+    "2026-11-19": 36
+  },
+  "redes": [
+    {
+      "nome": "Sonda (online)",
+      "ofertas": 168,
+      "cidades": 1,
+      "preco_mais_recente": "2026-11-19"
+    },
+    {
+      "nome": "Carrefour (online)",
+      "ofertas": 121,
+      "cidades": 1,
+      "preco_mais_recente": "2026-11-19"
+    },
+    {
+      "nome": "Extra Mercado (online)",
+      "ofertas": 3,
+      "cidades": 1,
+      "preco_mais_recente": "2026-11-18"
+    },
+    {
+      "nome": "Pão de Açúcar (online)",
+      "ofertas": 3,
+      "cidades": 1,
+      "preco_mais_recente": "2026-11-19"
+    }
+  ],
+  "queda_vs_anterior_percentual": null,
+  "avisos": [],
+  "nota": "Mede somente cobertura de dados públicos validados. Não mede visitantes, cliques de outros usuários, faturamento, estoque nem autorização comercial de uso."
+}

@@ -1,28 +1,30 @@
 {
-  "ultima_execucao_utc": "2026-11-18T23:51:15+00:00",
+  "ultima_execucao_utc": "2026-11-19T01:24:54+00:00",
   "fontes_configuradas": 6,
-  "precos_coletados": 267,
+  "precos_coletados": 295,
   "fontes_indisponiveis": 0,
   "avisos": [],
   "nota": "Quantidade de URLs descobertas não equivale a ofertas: só contam preços de página confirmada nos últimos três dias corridos (hoje e dois dias anteriores). Apenas preços online, sujeitos a CEP e disponibilidade; não reproduzir como preço de loja física.",
   "modo": "catalogo_incremental",
-  "urls_catalogo": 169,
-  "paginas_listagem": 701,
-  "novos_links_descobertos": 10,
+  "urls_catalogo": 177,
+  "paginas_listagem": 702,
+  "novos_links_descobertos": 8,
   "paginas_consultadas": 8,
-  "produtos_consultados_nesta_expansao": 3,
-  "ofertas_atualizadas_hoje": 163,
-  "fontes_indisponiveis_nesta_expansao": 0,
-  "avisos_expansao": [],
+  "produtos_consultados_nesta_expansao": 2,
+  "ofertas_atualizadas_hoje": 16,
+  "fontes_indisponiveis_nesta_expansao": 1,
+  "avisos_expansao": [
+    "produto: https://www.sondadelivery.com.br/delivery/produto/coxao-mole-pedaco-15kg/1000036495: ValueError: Produto exato não encontrado no título da página (marca/embalagem)"
+  ],
   "redes_adicionais": {
-    "gerado_em_utc": "2026-11-18T23:51:15+00:00",
+    "gerado_em_utc": "2026-11-19T01:24:54+00:00",
     "redes_candidatas": 4,
-    "novos_links_descobertos": 60,
-    "paginas_listagem_consultadas": 12,
-    "paginas_produto_consultadas": 55,
-    "ofertas_na_lista": 5,
-    "ofertas_na_pagina": 54,
-    "precos_ativos_total": 267,
+    "novos_links_descobertos": 24,
+    "paginas_listagem_consultadas": 10,
+    "paginas_produto_consultadas": 15,
+    "ofertas_na_lista": 9,
+    "ofertas_na_pagina": 11,
+    "precos_ativos_total": 295,
     "redes": {
       "extra": {
         "nome": "Extra Mercado (online)",
@@ -33,8 +35,8 @@
       },
       "carrefour": {
         "nome": "Carrefour (online)",
-        "urls_descobertas": 114,
-        "precos_validos": 101,
+        "urls_descobertas": 138,
+        "precos_validos": 121,
         "estado": "com preços confirmados",
         "localizacao_exigida": false
       },
@@ -54,6 +56,9 @@
       }
     },
     "avisos": [
+      "produto carrefour: ValueError: Embalagem ambígua (nenhuma ou várias quantidades)",
+      "produto carrefour: ValueError: Embalagem ambígua (nenhuma ou várias quantidades)",
+      "produto carrefour: ValueError: Embalagem ambígua (nenhuma ou várias quantidades)",
       "produto carrefour: ValueError: Embalagem ambígua (nenhuma ou várias quantidades)"
     ],
     "nota": "Redes candidatas NÃO são mercados com preços disponíveis. Preços online, sujeitos a loja/CEP. Bloqueio, ausência de preço e estoque desconhecido nunca geram ofertas fictícias."
