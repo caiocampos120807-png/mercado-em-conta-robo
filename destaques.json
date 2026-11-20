@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "gerado_em_utc": "2026-11-19T22:11:56+00:00",
-  "data_referencia": "2026-11-19",
+  "gerado_em_utc": "2026-11-20T10:21:31+00:00",
+  "data_referencia": "2026-11-20",
   "comparacoes": [
     {
       "sku": "arroz branco|camil|massa|5000",
@@ -10,15 +10,15 @@
       "marca": "Camil",
       "tamanho": "5",
       "unidade": "kg",
-      "preco_menor": 22.29,
-      "mercado_menor": "Carrefour (online)",
-      "link_menor": "https://mercado.carrefour.com.br/produto/arroz-branco-camil-tipo-1-5kg-1970",
-      "preco_maior": 34.64,
-      "mercado_maior": "Sonda (online)",
-      "link_maior": "https://www.sondadelivery.com.br/delivery/produto/arroz-branco-camil-5kg/1000001195",
-      "diferenca": 12.35,
+      "preco_menor": 20.9,
+      "mercado_menor": "Sonda (online)",
+      "link_menor": "https://www.sondadelivery.com.br/delivery/produto/arroz-branco-camil-5kg/1000001195",
+      "preco_maior": 32.99,
+      "mercado_maior": "Pão de Açúcar (online)",
+      "link_maior": "https://www.paodeacucar.com/produto/41329/arroz-agulhinha-tipo-1-camil-pacote-5kg",
+      "diferenca": 12.09,
       "quantidade_mercados": 4,
-      "atualizado": "2026-11-19"
+      "atualizado": "2026-11-20"
     },
     {
       "sku": "feijao carioca|camil|massa|1000",
@@ -30,28 +30,11 @@
       "preco_menor": 7.59,
       "mercado_menor": "Carrefour (online)",
       "link_menor": "https://mercado.carrefour.com.br/produto/feijao-carioca-camil-1kg-2927",
-      "preco_maior": 10.99,
+      "preco_maior": 10.66,
       "mercado_maior": "Sonda (online)",
       "link_maior": "https://www.sondadelivery.com.br/delivery/produto/feijao-carioca-camil--1kg/1000001726",
-      "diferenca": 3.4,
+      "diferenca": 3.07,
       "quantidade_mercados": 4,
-      "atualizado": "2026-11-19"
-    },
-    {
-      "sku": "agua sanitaria super candida|marca nao identificada|volume|2000",
-      "cidade": "São Paulo / SP",
-      "produto": "Água Sanitária Super Candida",
-      "marca": "Marca não identificada",
-      "tamanho": "2",
-      "unidade": "l",
-      "preco_menor": 6.99,
-      "mercado_menor": "Carrefour (online)",
-      "link_menor": "https://mercado.carrefour.com.br/produto/agua-sanitaria-super-candida-2l-34",
-      "preco_maior": 9.88,
-      "mercado_maior": "Sonda (online)",
-      "link_maior": "https://www.sondadelivery.com.br/delivery/produto/agua-sanitaria-super-candida-2-litros/1000019600",
-      "diferenca": 2.89,
-      "quantidade_mercados": 2,
       "atualizado": "2026-11-19"
     },
     {
@@ -69,6 +52,23 @@
       "link_maior": "https://www.paodeacucar.com/produto/97827/leite-longa-vida-integral-parmalat-1-litro",
       "diferenca": 2.8,
       "quantidade_mercados": 3,
+      "atualizado": "2026-11-19"
+    },
+    {
+      "sku": "agua sanitaria super candida|marca nao identificada|volume|2000",
+      "cidade": "São Paulo / SP",
+      "produto": "Água Sanitária Super Candida",
+      "marca": "Marca não identificada",
+      "tamanho": "2",
+      "unidade": "l",
+      "preco_menor": 8.29,
+      "mercado_menor": "Carrefour (online)",
+      "link_menor": "https://mercado.carrefour.com.br/produto/agua-sanitaria-super-candida-2l-34",
+      "preco_maior": 9.88,
+      "mercado_maior": "Sonda (online)",
+      "link_maior": "https://www.sondadelivery.com.br/delivery/produto/agua-sanitaria-super-candida-2-litros/1000019600",
+      "diferenca": 1.59,
+      "quantidade_mercados": 2,
       "atualizado": "2026-11-19"
     }
   ],

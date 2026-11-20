@@ -1,9 +1,9 @@
 {
-  "atualizado_utc": "2026-11-19T22:11:56+00:00",
-  "ofertas_ativas": 385,
-  "produtos_arquivados": 385,
-  "registrados_antes": 368,
-  "novos_links_confirmados": 17,
+  "atualizado_utc": "2026-11-20T10:21:31+00:00",
+  "ofertas_ativas": 411,
+  "produtos_arquivados": 411,
+  "registrados_antes": 385,
+  "novos_links_confirmados": 26,
   "prioridades_familia_4": [
     {
       "item": "Arroz",
@@ -22,7 +22,7 @@
     },
     {
       "item": "Café",
-      "ofertas": 2,
+      "ofertas": 5,
       "mercados": 2
     },
     {
@@ -37,12 +37,12 @@
     },
     {
       "item": "Ovos",
-      "ofertas": 3,
+      "ofertas": 5,
       "mercados": 1
     },
     {
       "item": "Frango",
-      "ofertas": 70,
+      "ofertas": 72,
       "mercados": 2
     },
     {
@@ -81,6 +81,11 @@
       "mercados": 1
     },
     {
+      "item": "Batata",
+      "ofertas": 1,
+      "mercados": 1
+    },
+    {
       "item": "Cebola",
       "ofertas": 2,
       "mercados": 1
@@ -97,6 +102,11 @@
     },
     {
       "item": "Banana",
+      "ofertas": 2,
+      "mercados": 1
+    },
+    {
+      "item": "Maçã",
       "ofertas": 1,
       "mercados": 1
     },
@@ -107,7 +117,7 @@
     },
     {
       "item": "Cenoura",
-      "ofertas": 1,
+      "ofertas": 2,
       "mercados": 1
     },
     {
@@ -147,6 +157,11 @@
     },
     {
       "item": "Aveia",
+      "ofertas": 1,
+      "mercados": 1
+    },
+    {
+      "item": "Água mineral",
       "ofertas": 1,
       "mercados": 1
     }
