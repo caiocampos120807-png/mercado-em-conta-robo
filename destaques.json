@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "gerado_em_utc": "2026-11-20T10:21:31+00:00",
+  "gerado_em_utc": "2026-11-20T22:10:29+00:00",
   "data_referencia": "2026-11-20",
   "comparacoes": [
     {
@@ -21,38 +21,38 @@
       "atualizado": "2026-11-20"
     },
     {
-      "sku": "feijao carioca|camil|massa|1000",
-      "cidade": "São Paulo / SP",
-      "produto": "Feijão carioca",
-      "marca": "Camil",
-      "tamanho": "1",
-      "unidade": "kg",
-      "preco_menor": 7.59,
-      "mercado_menor": "Carrefour (online)",
-      "link_menor": "https://mercado.carrefour.com.br/produto/feijao-carioca-camil-1kg-2927",
-      "preco_maior": 10.66,
-      "mercado_maior": "Sonda (online)",
-      "link_maior": "https://www.sondadelivery.com.br/delivery/produto/feijao-carioca-camil--1kg/1000001726",
-      "diferenca": 3.07,
-      "quantidade_mercados": 4,
-      "atualizado": "2026-11-19"
-    },
-    {
       "sku": "leite integral|parmalat|volume|1000",
       "cidade": "São Paulo / SP",
       "produto": "Leite integral",
       "marca": "Parmalat",
       "tamanho": "1",
       "unidade": "l",
-      "preco_menor": 4.49,
+      "preco_menor": 4.99,
       "mercado_menor": "Carrefour (online)",
       "link_menor": "https://mercado.carrefour.com.br/produto/leite-integral-uht-tipo-a-parmalat-1-litro-2051",
       "preco_maior": 7.29,
       "mercado_maior": "Pão de Açúcar (online)",
       "link_maior": "https://www.paodeacucar.com/produto/97827/leite-longa-vida-integral-parmalat-1-litro",
-      "diferenca": 2.8,
+      "diferenca": 2.3,
       "quantidade_mercados": 3,
-      "atualizado": "2026-11-19"
+      "atualizado": "2026-11-20"
+    },
+    {
+      "sku": "feijao carioca|camil|massa|1000",
+      "cidade": "São Paulo / SP",
+      "produto": "Feijão carioca",
+      "marca": "Camil",
+      "tamanho": "1",
+      "unidade": "kg",
+      "preco_menor": 8.99,
+      "mercado_menor": "Carrefour (online)",
+      "link_menor": "https://mercado.carrefour.com.br/produto/feijao-carioca-camil-1kg-2927",
+      "preco_maior": 10.66,
+      "mercado_maior": "Sonda (online)",
+      "link_maior": "https://www.sondadelivery.com.br/delivery/produto/feijao-carioca-camil--1kg/1000001726",
+      "diferenca": 1.67,
+      "quantidade_mercados": 4,
+      "atualizado": "2026-11-20"
     },
     {
       "sku": "agua sanitaria super candida|marca nao identificada|volume|2000",
@@ -69,7 +69,7 @@
       "link_maior": "https://www.sondadelivery.com.br/delivery/produto/agua-sanitaria-super-candida-2-litros/1000019600",
       "diferenca": 1.59,
       "quantidade_mercados": 2,
-      "atualizado": "2026-11-19"
+      "atualizado": "2026-11-20"
     }
   ],
   "cidades": [

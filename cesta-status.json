@@ -1,23 +1,23 @@
 {
-  "atualizado_utc": "2026-11-20T10:21:31+00:00",
-  "ofertas_ativas": 411,
-  "produtos_arquivados": 411,
-  "registrados_antes": 385,
-  "novos_links_confirmados": 26,
+  "atualizado_utc": "2026-11-20T22:10:29+00:00",
+  "ofertas_ativas": 475,
+  "produtos_arquivados": 475,
+  "registrados_antes": 411,
+  "novos_links_confirmados": 64,
   "prioridades_familia_4": [
     {
       "item": "Arroz",
-      "ofertas": 26,
+      "ofertas": 29,
       "mercados": 4
     },
     {
       "item": "Feijão",
-      "ofertas": 17,
+      "ofertas": 18,
       "mercados": 4
     },
     {
       "item": "Leite UHT",
-      "ofertas": 25,
+      "ofertas": 27,
       "mercados": 3
     },
     {
@@ -27,13 +27,13 @@
     },
     {
       "item": "Açúcar",
-      "ofertas": 1,
-      "mercados": 1
+      "ofertas": 5,
+      "mercados": 2
     },
     {
       "item": "Macarrão",
-      "ofertas": 2,
-      "mercados": 1
+      "ofertas": 3,
+      "mercados": 2
     },
     {
       "item": "Ovos",
@@ -42,7 +42,7 @@
     },
     {
       "item": "Frango",
-      "ofertas": 72,
+      "ofertas": 75,
       "mercados": 2
     },
     {
@@ -62,8 +62,8 @@
     },
     {
       "item": "Molho de tomate",
-      "ofertas": 2,
-      "mercados": 1
+      "ofertas": 3,
+      "mercados": 2
     },
     {
       "item": "Pão de forma",
@@ -72,7 +72,7 @@
     },
     {
       "item": "Queijo",
-      "ofertas": 1,
+      "ofertas": 2,
       "mercados": 1
     },
     {
@@ -107,13 +107,13 @@
     },
     {
       "item": "Maçã",
-      "ofertas": 1,
-      "mercados": 1
+      "ofertas": 2,
+      "mercados": 2
     },
     {
       "item": "Laranja",
-      "ofertas": 1,
-      "mercados": 1
+      "ofertas": 3,
+      "mercados": 2
     },
     {
       "item": "Cenoura",
@@ -141,8 +141,18 @@
       "mercados": 2
     },
     {
+      "item": "Desinfetante",
+      "ofertas": 1,
+      "mercados": 1
+    },
+    {
       "item": "Amaciante",
       "ofertas": 1,
+      "mercados": 1
+    },
+    {
+      "item": "Sabonete",
+      "ofertas": 2,
       "mercados": 1
     },
     {
@@ -151,9 +161,14 @@
       "mercados": 1
     },
     {
-      "item": "Biscoito",
+      "item": "Desodorante",
       "ofertas": 1,
       "mercados": 1
+    },
+    {
+      "item": "Biscoito",
+      "ofertas": 2,
+      "mercados": 2
     },
     {
       "item": "Aveia",
