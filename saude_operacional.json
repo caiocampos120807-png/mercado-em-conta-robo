@@ -1,13 +1,13 @@
 {
   "schema": 1,
-  "gerado_em_utc": "2026-11-20T22:10:29+00:00",
-  "data_referencia": "2026-11-20",
+  "gerado_em_utc": "2026-11-21T10:08:05+00:00",
+  "data_referencia": "2026-11-21",
   "estado": "operacional",
-  "ofertas_lidas": 475,
-  "ofertas_validas": 475,
+  "ofertas_lidas": 479,
+  "ofertas_validas": 479,
   "ofertas_rejeitadas": 0,
   "motivos_rejeicao": {},
-  "produtos_distintos": 459,
+  "produtos_distintos": 462,
   "redes_ativas": 4,
   "cidades_com_oferta": 1,
   "produtos_comparaveis_mesma_cidade": 4,
@@ -15,22 +15,22 @@
     "São Paulo / SP": 4
   },
   "ofertas_por_data": {
-    "2026-11-18": 28,
-    "2026-11-19": 97,
-    "2026-11-20": 350
+    "2026-11-19": 41,
+    "2026-11-20": 241,
+    "2026-11-21": 197
   },
   "redes": [
     {
       "nome": "Sonda (online)",
-      "ofertas": 271,
+      "ofertas": 283,
       "cidades": 1,
-      "preco_mais_recente": "2026-11-20"
+      "preco_mais_recente": "2026-11-21"
     },
     {
       "nome": "Carrefour (online)",
-      "ofertas": 198,
+      "ofertas": 190,
       "cidades": 1,
-      "preco_mais_recente": "2026-11-20"
+      "preco_mais_recente": "2026-11-21"
     },
     {
       "nome": "Extra Mercado (online)",
@@ -42,10 +42,10 @@
       "nome": "Pão de Açúcar (online)",
       "ofertas": 3,
       "cidades": 1,
-      "preco_mais_recente": "2026-11-20"
+      "preco_mais_recente": "2026-11-21"
     }
   ],
-  "queda_vs_anterior_percentual": -15.6,
+  "queda_vs_anterior_percentual": -0.8,
   "avisos": [],
   "nota": "Mede somente cobertura de dados públicos validados. Não mede visitantes, cliques de outros usuários, faturamento, estoque nem autorização comercial de uso."
 }

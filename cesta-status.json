@@ -1,9 +1,9 @@
 {
-  "atualizado_utc": "2026-11-20T22:10:29+00:00",
-  "ofertas_ativas": 475,
-  "produtos_arquivados": 475,
-  "registrados_antes": 411,
-  "novos_links_confirmados": 64,
+  "atualizado_utc": "2026-11-21T10:08:04+00:00",
+  "ofertas_ativas": 479,
+  "produtos_arquivados": 507,
+  "registrados_antes": 475,
+  "novos_links_confirmados": 32,
   "prioridades_familia_4": [
     {
       "item": "Arroz",
@@ -12,12 +12,12 @@
     },
     {
       "item": "Feijão",
-      "ofertas": 18,
+      "ofertas": 17,
       "mercados": 4
     },
     {
       "item": "Leite UHT",
-      "ofertas": 27,
+      "ofertas": 33,
       "mercados": 3
     },
     {
@@ -42,7 +42,7 @@
     },
     {
       "item": "Frango",
-      "ofertas": 75,
+      "ofertas": 81,
       "mercados": 2
     },
     {
@@ -67,13 +67,13 @@
     },
     {
       "item": "Pão de forma",
-      "ofertas": 4,
+      "ofertas": 5,
       "mercados": 1
     },
     {
       "item": "Queijo",
-      "ofertas": 2,
-      "mercados": 1
+      "ofertas": 3,
+      "mercados": 2
     },
     {
       "item": "Iogurte",
