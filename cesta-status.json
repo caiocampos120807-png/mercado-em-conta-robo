@@ -1,9 +1,9 @@
 {
-  "atualizado_utc": "2026-11-21T10:08:04+00:00",
-  "ofertas_ativas": 479,
-  "produtos_arquivados": 507,
-  "registrados_antes": 475,
-  "novos_links_confirmados": 32,
+  "atualizado_utc": "2026-11-21T22:04:19+00:00",
+  "ofertas_ativas": 498,
+  "produtos_arquivados": 525,
+  "registrados_antes": 479,
+  "novos_links_confirmados": 19,
   "prioridades_familia_4": [
     {
       "item": "Arroz",
@@ -12,7 +12,7 @@
     },
     {
       "item": "Feijão",
-      "ofertas": 17,
+      "ofertas": 18,
       "mercados": 4
     },
     {
@@ -122,22 +122,22 @@
     },
     {
       "item": "Papel higiênico",
-      "ofertas": 3,
+      "ofertas": 4,
       "mercados": 1
     },
     {
       "item": "Detergente",
-      "ofertas": 3,
-      "mercados": 1
-    },
-    {
-      "item": "Sabão em pó ou líquido",
       "ofertas": 5,
       "mercados": 1
     },
     {
+      "item": "Sabão em pó ou líquido",
+      "ofertas": 7,
+      "mercados": 1
+    },
+    {
       "item": "Água sanitária",
-      "ofertas": 8,
+      "ofertas": 9,
       "mercados": 2
     },
     {
