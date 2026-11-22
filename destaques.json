@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "gerado_em_utc": "2026-11-21T22:04:19+00:00",
-  "data_referencia": "2026-11-21",
+  "gerado_em_utc": "2026-11-22T10:09:35+00:00",
+  "data_referencia": "2026-11-22",
   "comparacoes": [
     {
       "sku": "arroz branco|camil|massa|5000",
@@ -18,7 +18,7 @@
       "link_maior": "https://www.paodeacucar.com/produto/41329/arroz-agulhinha-tipo-1-camil-pacote-5kg",
       "diferenca": 12.09,
       "quantidade_mercados": 4,
-      "atualizado": "2026-11-21"
+      "atualizado": "2026-11-22"
     },
     {
       "sku": "leite integral|parmalat|volume|1000",
@@ -35,7 +35,7 @@
       "link_maior": "https://www.paodeacucar.com/produto/97827/leite-longa-vida-integral-parmalat-1-litro",
       "diferenca": 2.3,
       "quantidade_mercados": 3,
-      "atualizado": "2026-11-21"
+      "atualizado": "2026-11-22"
     },
     {
       "sku": "feijao carioca|camil|massa|1000",
@@ -52,7 +52,7 @@
       "link_maior": "https://www.sondadelivery.com.br/delivery/produto/feijao-carioca-camil--1kg/1000001726",
       "diferenca": 1.67,
       "quantidade_mercados": 4,
-      "atualizado": "2026-11-21"
+      "atualizado": "2026-11-22"
     },
     {
       "sku": "agua sanitaria super candida|marca nao identificada|volume|2000",
