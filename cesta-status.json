@@ -1,23 +1,23 @@
 {
-  "atualizado_utc": "2026-11-22T10:09:35+00:00",
-  "ofertas_ativas": 476,
-  "produtos_arquivados": 537,
-  "registrados_antes": 498,
-  "novos_links_confirmados": 13,
+  "atualizado_utc": "2026-11-22T22:06:40+00:00",
+  "ofertas_ativas": 514,
+  "produtos_arquivados": 574,
+  "registrados_antes": 476,
+  "novos_links_confirmados": 38,
   "prioridades_familia_4": [
     {
       "item": "Arroz",
-      "ofertas": 29,
+      "ofertas": 30,
       "mercados": 4
     },
     {
       "item": "Feijão",
-      "ofertas": 18,
+      "ofertas": 20,
       "mercados": 4
     },
     {
       "item": "Leite UHT",
-      "ofertas": 31,
+      "ofertas": 32,
       "mercados": 3
     },
     {
@@ -102,8 +102,8 @@
     },
     {
       "item": "Banana",
-      "ofertas": 2,
-      "mercados": 1
+      "ofertas": 3,
+      "mercados": 2
     },
     {
       "item": "Maçã",
@@ -147,7 +147,7 @@
     },
     {
       "item": "Amaciante",
-      "ofertas": 1,
+      "ofertas": 3,
       "mercados": 1
     },
     {
