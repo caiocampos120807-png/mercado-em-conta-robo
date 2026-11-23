@@ -1,9 +1,9 @@
 {
-  "atualizado_utc": "2026-11-23T10:36:16+00:00",
-  "ofertas_ativas": 535,
-  "produtos_arquivados": 622,
-  "registrados_antes": 514,
-  "novos_links_confirmados": 48,
+  "atualizado_utc": "2026-11-23T22:13:46+00:00",
+  "ofertas_ativas": 562,
+  "produtos_arquivados": 649,
+  "registrados_antes": 535,
+  "novos_links_confirmados": 27,
   "prioridades_familia_4": [
     {
       "item": "Arroz",
@@ -17,7 +17,7 @@
     },
     {
       "item": "Leite UHT",
-      "ofertas": 33,
+      "ofertas": 34,
       "mercados": 3
     },
     {
@@ -42,12 +42,12 @@
     },
     {
       "item": "Frango",
-      "ofertas": 84,
+      "ofertas": 86,
       "mercados": 2
     },
     {
       "item": "Carne bovina",
-      "ofertas": 17,
+      "ofertas": 19,
       "mercados": 2
     },
     {
@@ -122,7 +122,7 @@
     },
     {
       "item": "Papel higiênico",
-      "ofertas": 4,
+      "ofertas": 5,
       "mercados": 1
     },
     {
