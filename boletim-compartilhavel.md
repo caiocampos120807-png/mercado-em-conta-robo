@@ -1,6 +1,6 @@
 # Comparações da semana — Mercado em Conta
 
-Dados de referência: 22/11/2026.
+Dados de referência: 23/11/2026.
 
 Valores observados em páginas de supermercados; sujeitos a CEP, estoque e alterações. 
 A diferença de preço **não é** desconto ou economia realizada.
