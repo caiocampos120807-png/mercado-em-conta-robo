@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "validado_em_utc": "2026-11-23T22:13:46+00:00",
+  "validado_em_utc": "2026-11-24T10:34:50+00:00",
   "pode_publicar": true,
-  "resultado": "Validação passou: 535 -> 562 ofertas recentes.",
+  "resultado": "Validação passou: 553 -> 592 ofertas recentes.",
   "regra": "Bloqueia CSV vazio ou perda >=75% das ofertas recentes quando havia pelo menos 20 antes. Não mantém preços antigos como atuais."
 }

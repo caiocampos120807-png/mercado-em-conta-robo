@@ -1,16 +1,16 @@
 {
-  "urls_catalogo": 571,
-  "paginas_listagem": 789,
+  "urls_catalogo": 621,
+  "paginas_listagem": 792,
   "schema": 1,
-  "gerado_em_utc": "2026-11-23T22:13:46+00:00",
-  "data_referencia": "2026-11-23",
-  "ofertas_ativas": 562,
-  "produtos_distintos": 545,
+  "gerado_em_utc": "2026-11-24T10:34:50+00:00",
+  "data_referencia": "2026-11-24",
+  "ofertas_ativas": 592,
+  "produtos_distintos": 575,
   "produtos_em_2_ou_mais_mercados": 4,
   "supermercados": 4,
   "marcas": 44,
   "ofertas_rejeitadas": 0,
   "motivos_rejeicao": {},
-  "observacoes_historicas": 2229,
+  "observacoes_historicas": 2452,
   "nota": "Preços de páginas públicas, sujeitos a CEP, entrega, loja e alteração. Comparabilidade por nome/marca/embalagem EXATOS. Ofertas vencidas são omitidas."
 }

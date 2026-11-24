@@ -1,9 +1,9 @@
 {
-  "atualizado_utc": "2026-11-23T22:13:46+00:00",
-  "ofertas_ativas": 562,
-  "produtos_arquivados": 649,
-  "registrados_antes": 535,
-  "novos_links_confirmados": 27,
+  "atualizado_utc": "2026-11-24T10:34:50+00:00",
+  "ofertas_ativas": 592,
+  "produtos_arquivados": 679,
+  "registrados_antes": 562,
+  "novos_links_confirmados": 38,
   "prioridades_familia_4": [
     {
       "item": "Arroz",
@@ -27,7 +27,7 @@
     },
     {
       "item": "Açúcar",
-      "ofertas": 5,
+      "ofertas": 7,
       "mercados": 2
     },
     {
@@ -37,7 +37,7 @@
     },
     {
       "item": "Ovos",
-      "ofertas": 5,
+      "ofertas": 6,
       "mercados": 1
     },
     {
@@ -57,7 +57,7 @@
     },
     {
       "item": "Farinha de trigo",
-      "ofertas": 1,
+      "ofertas": 2,
       "mercados": 1
     },
     {
@@ -107,8 +107,8 @@
     },
     {
       "item": "Maçã",
-      "ofertas": 2,
-      "mercados": 2
+      "ofertas": 1,
+      "mercados": 1
     },
     {
       "item": "Laranja",
@@ -122,7 +122,7 @@
     },
     {
       "item": "Papel higiênico",
-      "ofertas": 5,
+      "ofertas": 4,
       "mercados": 1
     },
     {
@@ -152,8 +152,8 @@
     },
     {
       "item": "Sabonete",
-      "ofertas": 2,
-      "mercados": 1
+      "ofertas": 3,
+      "mercados": 2
     },
     {
       "item": "Pasta de dente",
@@ -172,7 +172,7 @@
     },
     {
       "item": "Biscoito",
-      "ofertas": 3,
+      "ofertas": 2,
       "mercados": 2
     },
     {

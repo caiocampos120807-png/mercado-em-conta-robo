@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "gerado_em_utc": "2026-11-23T22:13:46+00:00",
-  "data_referencia": "2026-11-23",
+  "gerado_em_utc": "2026-11-24T10:34:50+00:00",
+  "data_referencia": "2026-11-24",
   "comparacoes": [
     {
       "sku": "arroz branco|camil|massa|5000",
@@ -10,13 +10,13 @@
       "marca": "Camil",
       "tamanho": "5",
       "unidade": "kg",
-      "preco_menor": 20.9,
-      "mercado_menor": "Sonda (online)",
-      "link_menor": "https://www.sondadelivery.com.br/delivery/produto/arroz-branco-camil-5kg/1000001195",
+      "preco_menor": 21.19,
+      "mercado_menor": "Carrefour (online)",
+      "link_menor": "https://mercado.carrefour.com.br/produto/arroz-branco-camil-tipo-kg-1970",
       "preco_maior": 32.99,
       "mercado_maior": "Pão de Açúcar (online)",
       "link_maior": "https://www.paodeacucar.com/produto/41329/arroz-agulhinha-tipo-1-camil-pacote-5kg",
-      "diferenca": 12.09,
+      "diferenca": 11.8,
       "quantidade_mercados": 4,
       "atualizado": "2026-11-23"
     },
@@ -52,7 +52,7 @@
       "link_maior": "https://www.sondadelivery.com.br/delivery/produto/feijao-carioca-camil--1kg/1000001726",
       "diferenca": 1.67,
       "quantidade_mercados": 4,
-      "atualizado": "2026-11-23"
+      "atualizado": "2026-11-24"
     },
     {
       "sku": "agua sanitaria super candida|marca nao identificada|volume|2000",
