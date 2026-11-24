@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "gerado_em_utc": "2026-11-24T10:34:50+00:00",
+  "gerado_em_utc": "2026-11-24T22:20:24+00:00",
   "data_referencia": "2026-11-24",
   "comparacoes": [
     {
@@ -18,7 +18,7 @@
       "link_maior": "https://www.paodeacucar.com/produto/41329/arroz-agulhinha-tipo-1-camil-pacote-5kg",
       "diferenca": 11.8,
       "quantidade_mercados": 4,
-      "atualizado": "2026-11-23"
+      "atualizado": "2026-11-24"
     },
     {
       "sku": "leite integral|parmalat|volume|1000",
@@ -35,7 +35,24 @@
       "link_maior": "https://www.paodeacucar.com/produto/97827/leite-longa-vida-integral-parmalat-1-litro",
       "diferenca": 3.1,
       "quantidade_mercados": 3,
-      "atualizado": "2026-11-23"
+      "atualizado": "2026-11-24"
+    },
+    {
+      "sku": "agua sanitaria super candida|marca nao identificada|volume|2000",
+      "cidade": "São Paulo / SP",
+      "produto": "Água Sanitária Super Candida",
+      "marca": "Marca não identificada",
+      "tamanho": "2",
+      "unidade": "l",
+      "preco_menor": 6.99,
+      "mercado_menor": "Carrefour (online)",
+      "link_menor": "https://mercado.carrefour.com.br/produto/agua-sanitaria-super-candida-2l-34",
+      "preco_maior": 9.88,
+      "mercado_maior": "Sonda (online)",
+      "link_maior": "https://www.sondadelivery.com.br/delivery/produto/agua-sanitaria-super-candida-2-litros/1000019600",
+      "diferenca": 2.89,
+      "quantidade_mercados": 2,
+      "atualizado": "2026-11-24"
     },
     {
       "sku": "feijao carioca|camil|massa|1000",
@@ -53,23 +70,6 @@
       "diferenca": 1.67,
       "quantidade_mercados": 4,
       "atualizado": "2026-11-24"
-    },
-    {
-      "sku": "agua sanitaria super candida|marca nao identificada|volume|2000",
-      "cidade": "São Paulo / SP",
-      "produto": "Água Sanitária Super Candida",
-      "marca": "Marca não identificada",
-      "tamanho": "2",
-      "unidade": "l",
-      "preco_menor": 8.59,
-      "mercado_menor": "Carrefour (online)",
-      "link_menor": "https://mercado.carrefour.com.br/produto/agua-sanitaria-super-candida-2l-34",
-      "preco_maior": 9.88,
-      "mercado_maior": "Sonda (online)",
-      "link_maior": "https://www.sondadelivery.com.br/delivery/produto/agua-sanitaria-super-candida-2-litros/1000019600",
-      "diferenca": 1.29,
-      "quantidade_mercados": 2,
-      "atualizado": "2026-11-23"
     }
   ],
   "cidades": [

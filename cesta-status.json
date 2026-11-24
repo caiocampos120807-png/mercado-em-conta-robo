@@ -1,9 +1,9 @@
 {
-  "atualizado_utc": "2026-11-24T10:34:50+00:00",
-  "ofertas_ativas": 592,
-  "produtos_arquivados": 679,
-  "registrados_antes": 562,
-  "novos_links_confirmados": 38,
+  "atualizado_utc": "2026-11-24T22:20:24+00:00",
+  "ofertas_ativas": 611,
+  "produtos_arquivados": 696,
+  "registrados_antes": 592,
+  "novos_links_confirmados": 19,
   "prioridades_familia_4": [
     {
       "item": "Arroz",
@@ -17,12 +17,12 @@
     },
     {
       "item": "Leite UHT",
-      "ofertas": 34,
+      "ofertas": 36,
       "mercados": 3
     },
     {
       "item": "Café",
-      "ofertas": 5,
+      "ofertas": 9,
       "mercados": 2
     },
     {
@@ -32,7 +32,7 @@
     },
     {
       "item": "Macarrão",
-      "ofertas": 3,
+      "ofertas": 4,
       "mercados": 2
     },
     {
@@ -42,7 +42,7 @@
     },
     {
       "item": "Frango",
-      "ofertas": 86,
+      "ofertas": 88,
       "mercados": 2
     },
     {
@@ -112,7 +112,7 @@
     },
     {
       "item": "Laranja",
-      "ofertas": 4,
+      "ofertas": 5,
       "mercados": 2
     },
     {
