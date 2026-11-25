@@ -1,9 +1,9 @@
 {
-  "atualizado_utc": "2026-11-24T22:20:24+00:00",
-  "ofertas_ativas": 611,
-  "produtos_arquivados": 696,
-  "registrados_antes": 592,
-  "novos_links_confirmados": 19,
+  "atualizado_utc": "2026-11-25T10:34:09+00:00",
+  "ofertas_ativas": 602,
+  "produtos_arquivados": 698,
+  "registrados_antes": 611,
+  "novos_links_confirmados": 3,
   "prioridades_familia_4": [
     {
       "item": "Arroz",
@@ -76,22 +76,12 @@
       "mercados": 2
     },
     {
-      "item": "Iogurte",
-      "ofertas": 1,
-      "mercados": 1
-    },
-    {
       "item": "Batata",
       "ofertas": 1,
       "mercados": 1
     },
     {
       "item": "Cebola",
-      "ofertas": 2,
-      "mercados": 1
-    },
-    {
-      "item": "Tomate",
       "ofertas": 2,
       "mercados": 1
     },
@@ -112,17 +102,12 @@
     },
     {
       "item": "Laranja",
-      "ofertas": 5,
+      "ofertas": 4,
       "mercados": 2
     },
     {
-      "item": "Cenoura",
-      "ofertas": 2,
-      "mercados": 1
-    },
-    {
       "item": "Papel higiênico",
-      "ofertas": 4,
+      "ofertas": 5,
       "mercados": 1
     },
     {
@@ -137,7 +122,7 @@
     },
     {
       "item": "Água sanitária",
-      "ofertas": 10,
+      "ofertas": 9,
       "mercados": 2
     },
     {
@@ -147,7 +132,7 @@
     },
     {
       "item": "Amaciante",
-      "ofertas": 3,
+      "ofertas": 1,
       "mercados": 1
     },
     {
