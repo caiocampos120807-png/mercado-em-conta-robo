@@ -1,9 +1,9 @@
 {
-  "atualizado_utc": "2026-11-25T10:34:09+00:00",
-  "ofertas_ativas": 602,
-  "produtos_arquivados": 698,
-  "registrados_antes": 611,
-  "novos_links_confirmados": 3,
+  "atualizado_utc": "2026-11-25T22:18:43+00:00",
+  "ofertas_ativas": 606,
+  "produtos_arquivados": 702,
+  "registrados_antes": 602,
+  "novos_links_confirmados": 4,
   "prioridades_familia_4": [
     {
       "item": "Arroz",
@@ -17,7 +17,7 @@
     },
     {
       "item": "Leite UHT",
-      "ofertas": 36,
+      "ofertas": 37,
       "mercados": 3
     },
     {
@@ -112,7 +112,7 @@
     },
     {
       "item": "Detergente",
-      "ofertas": 5,
+      "ofertas": 6,
       "mercados": 1
     },
     {

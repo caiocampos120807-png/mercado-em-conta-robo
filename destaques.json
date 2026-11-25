@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "gerado_em_utc": "2026-11-25T10:34:09+00:00",
+  "gerado_em_utc": "2026-11-25T22:18:43+00:00",
   "data_referencia": "2026-11-25",
   "comparacoes": [
     {
@@ -18,7 +18,7 @@
       "link_maior": "https://www.paodeacucar.com/produto/41329/arroz-agulhinha-tipo-1-camil-pacote-5kg",
       "diferenca": 11.8,
       "quantidade_mercados": 4,
-      "atualizado": "2026-11-24"
+      "atualizado": "2026-11-25"
     },
     {
       "sku": "agua sanitaria super candida|marca nao identificada|volume|2000",
@@ -35,24 +35,7 @@
       "link_maior": "https://www.sondadelivery.com.br/delivery/produto/agua-sanitaria-super-candida-2-litros/1000019600",
       "diferenca": 2.89,
       "quantidade_mercados": 2,
-      "atualizado": "2026-11-24"
-    },
-    {
-      "sku": "leite integral|parmalat|volume|1000",
-      "cidade": "São Paulo / SP",
-      "produto": "Leite integral",
-      "marca": "Parmalat",
-      "tamanho": "1",
-      "unidade": "l",
-      "preco_menor": 4.19,
-      "mercado_menor": "Carrefour (online)",
-      "link_menor": "https://mercado.carrefour.com.br/produto/leite-integral-uht-tipo-a-parmalat-1-litro-2051",
-      "preco_maior": 6.59,
-      "mercado_maior": "Sonda (online)",
-      "link_maior": "https://www.sondadelivery.com.br/delivery/produto/leite-longa-vida-integral-parmalat-1-litro/1000012315",
-      "diferenca": 2.4,
-      "quantidade_mercados": 3,
-      "atualizado": "2026-11-24"
+      "atualizado": "2026-11-25"
     },
     {
       "sku": "feijao carioca|camil|massa|1000",
@@ -69,6 +52,23 @@
       "link_maior": "https://www.sondadelivery.com.br/delivery/produto/feijao-carioca-camil--1kg/1000001726",
       "diferenca": 1.67,
       "quantidade_mercados": 4,
+      "atualizado": "2026-11-25"
+    },
+    {
+      "sku": "leite integral|parmalat|volume|1000",
+      "cidade": "São Paulo / SP",
+      "produto": "Leite integral",
+      "marca": "Parmalat",
+      "tamanho": "1",
+      "unidade": "l",
+      "preco_menor": 4.99,
+      "mercado_menor": "Carrefour (online)",
+      "link_menor": "https://mercado.carrefour.com.br/produto/leite-integral-uht-tipo-a-parmalat-1-litro-2051",
+      "preco_maior": 6.59,
+      "mercado_maior": "Sonda (online)",
+      "link_maior": "https://www.sondadelivery.com.br/delivery/produto/leite-longa-vida-integral-parmalat-1-litro/1000012315",
+      "diferenca": 1.6,
+      "quantidade_mercados": 3,
       "atualizado": "2026-11-25"
     }
   ],
