@@ -1,13 +1,13 @@
 {
-  "atualizado_utc": "2026-11-25T22:18:43+00:00",
-  "ofertas_ativas": 606,
-  "produtos_arquivados": 702,
-  "registrados_antes": 602,
-  "novos_links_confirmados": 4,
+  "atualizado_utc": "2026-11-26T10:34:06+00:00",
+  "ofertas_ativas": 573,
+  "produtos_arquivados": 715,
+  "registrados_antes": 606,
+  "novos_links_confirmados": 14,
   "prioridades_familia_4": [
     {
       "item": "Arroz",
-      "ofertas": 30,
+      "ofertas": 32,
       "mercados": 4
     },
     {
@@ -22,12 +22,12 @@
     },
     {
       "item": "Café",
-      "ofertas": 9,
+      "ofertas": 12,
       "mercados": 2
     },
     {
       "item": "Açúcar",
-      "ofertas": 7,
+      "ofertas": 8,
       "mercados": 2
     },
     {
@@ -37,17 +37,17 @@
     },
     {
       "item": "Ovos",
-      "ofertas": 6,
+      "ofertas": 7,
       "mercados": 1
     },
     {
       "item": "Frango",
-      "ofertas": 88,
+      "ofertas": 89,
       "mercados": 2
     },
     {
       "item": "Carne bovina",
-      "ofertas": 19,
+      "ofertas": 20,
       "mercados": 2
     },
     {
@@ -57,13 +57,13 @@
     },
     {
       "item": "Farinha de trigo",
-      "ofertas": 2,
+      "ofertas": 3,
       "mercados": 1
     },
     {
       "item": "Molho de tomate",
-      "ofertas": 3,
-      "mercados": 2
+      "ofertas": 1,
+      "mercados": 1
     },
     {
       "item": "Pão de forma",
@@ -76,29 +76,19 @@
       "mercados": 2
     },
     {
-      "item": "Batata",
-      "ofertas": 1,
-      "mercados": 1
-    },
-    {
-      "item": "Cebola",
-      "ofertas": 2,
-      "mercados": 1
-    },
-    {
       "item": "Alho",
       "ofertas": 3,
       "mercados": 1
     },
     {
       "item": "Banana",
-      "ofertas": 3,
-      "mercados": 2
+      "ofertas": 1,
+      "mercados": 1
     },
     {
       "item": "Maçã",
-      "ofertas": 1,
-      "mercados": 1
+      "ofertas": 2,
+      "mercados": 2
     },
     {
       "item": "Laranja",
@@ -122,16 +112,11 @@
     },
     {
       "item": "Água sanitária",
-      "ofertas": 9,
+      "ofertas": 8,
       "mercados": 2
     },
     {
       "item": "Desinfetante",
-      "ofertas": 2,
-      "mercados": 2
-    },
-    {
-      "item": "Amaciante",
       "ofertas": 1,
       "mercados": 1
     },
@@ -151,22 +136,7 @@
       "mercados": 1
     },
     {
-      "item": "Papel toalha",
-      "ofertas": 1,
-      "mercados": 1
-    },
-    {
       "item": "Biscoito",
-      "ofertas": 2,
-      "mercados": 2
-    },
-    {
-      "item": "Aveia",
-      "ofertas": 1,
-      "mercados": 1
-    },
-    {
-      "item": "Água mineral",
       "ofertas": 1,
       "mercados": 1
     }
