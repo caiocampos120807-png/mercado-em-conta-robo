@@ -1,13 +1,13 @@
 {
-  "atualizado_utc": "2026-11-26T10:34:06+00:00",
-  "ofertas_ativas": 573,
-  "produtos_arquivados": 715,
-  "registrados_antes": 606,
-  "novos_links_confirmados": 14,
+  "atualizado_utc": "2026-11-26T22:16:32+00:00",
+  "ofertas_ativas": 578,
+  "produtos_arquivados": 718,
+  "registrados_antes": 573,
+  "novos_links_confirmados": 5,
   "prioridades_familia_4": [
     {
       "item": "Arroz",
-      "ofertas": 32,
+      "ofertas": 33,
       "mercados": 4
     },
     {
@@ -22,7 +22,7 @@
     },
     {
       "item": "Café",
-      "ofertas": 12,
+      "ofertas": 14,
       "mercados": 2
     },
     {

@@ -1,22 +1,22 @@
 {
   "schema": 1,
-  "gerado_em_utc": "2026-11-26T10:34:07+00:00",
+  "gerado_em_utc": "2026-11-26T22:16:32+00:00",
   "data_referencia": "2026-11-26",
-  "ofertas_validadas": 573,
-  "produtos_distintos_total": 556,
+  "ofertas_validadas": 578,
+  "produtos_distintos_total": 561,
   "mercados_com_precos": 4,
   "comparacoes_possiveis_por_cidade": 4,
   "cidades": [
     {
       "cidade": "São Paulo / SP",
       "mercados_com_preco": 4,
-      "produtos_distintos": 556,
+      "produtos_distintos": 561,
       "produtos_comparaveis": 4,
-      "ofertas": 573,
+      "ofertas": 578,
       "mercados": [
         {
           "nome": "Carrefour (online)",
-          "skus": 158
+          "skus": 161
         },
         {
           "nome": "Extra Mercado (online)",
@@ -28,7 +28,7 @@
         },
         {
           "nome": "Sonda (online)",
-          "skus": 401
+          "skus": 403
         }
       ]
     }
@@ -36,11 +36,11 @@
   "mercados": [
     {
       "nome": "Sonda (online)",
-      "ofertas": 402
+      "ofertas": 404
     },
     {
       "nome": "Carrefour (online)",
-      "ofertas": 165
+      "ofertas": 168
     },
     {
       "nome": "Extra Mercado (online)",
@@ -54,7 +54,7 @@
   "categorias": [
     {
       "nome": "Mercearia",
-      "ofertas": 327
+      "ofertas": 330
     },
     {
       "nome": "Carnes",
@@ -66,7 +66,7 @@
     },
     {
       "nome": "Bebidas",
-      "ofertas": 26
+      "ofertas": 28
     },
     {
       "nome": "Higiene",
