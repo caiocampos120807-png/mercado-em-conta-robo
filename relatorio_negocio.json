@@ -1,22 +1,22 @@
 {
   "schema": 1,
-  "gerado_em_utc": "2026-11-27T10:31:17+00:00",
+  "gerado_em_utc": "2026-11-27T22:18:10+00:00",
   "data_referencia": "2026-11-27",
-  "ofertas_validadas": 487,
-  "produtos_distintos_total": 470,
+  "ofertas_validadas": 489,
+  "produtos_distintos_total": 472,
   "mercados_com_precos": 4,
   "comparacoes_possiveis_por_cidade": 4,
   "cidades": [
     {
       "cidade": "São Paulo / SP",
       "mercados_com_preco": 4,
-      "produtos_distintos": 470,
+      "produtos_distintos": 472,
       "produtos_comparaveis": 4,
-      "ofertas": 487,
+      "ofertas": 489,
       "mercados": [
         {
           "nome": "Carrefour (online)",
-          "skus": 144
+          "skus": 145
         },
         {
           "nome": "Extra Mercado (online)",
@@ -28,7 +28,7 @@
         },
         {
           "nome": "Sonda (online)",
-          "skus": 329
+          "skus": 330
         }
       ]
     }
@@ -36,11 +36,11 @@
   "mercados": [
     {
       "nome": "Sonda (online)",
-      "ofertas": 330
+      "ofertas": 331
     },
     {
       "nome": "Carrefour (online)",
-      "ofertas": 151
+      "ofertas": 152
     },
     {
       "nome": "Extra Mercado (online)",
@@ -62,7 +62,7 @@
     },
     {
       "nome": "Laticínios",
-      "ofertas": 40
+      "ofertas": 41
     },
     {
       "nome": "Bebidas",
@@ -74,7 +74,7 @@
     },
     {
       "nome": "Limpeza",
-      "ofertas": 22
+      "ofertas": 23
     },
     {
       "nome": "Hortifruti",

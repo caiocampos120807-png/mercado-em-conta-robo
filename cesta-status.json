@@ -1,9 +1,9 @@
 {
-  "atualizado_utc": "2026-11-27T10:31:17+00:00",
-  "ofertas_ativas": 487,
-  "produtos_arquivados": 723,
-  "registrados_antes": 578,
-  "novos_links_confirmados": 27,
+  "atualizado_utc": "2026-11-27T22:18:10+00:00",
+  "ofertas_ativas": 489,
+  "produtos_arquivados": 725,
+  "registrados_antes": 487,
+  "novos_links_confirmados": 2,
   "prioridades_familia_4": [
     {
       "item": "Arroz",
@@ -102,7 +102,7 @@
     },
     {
       "item": "Detergente",
-      "ofertas": 6,
+      "ofertas": 7,
       "mercados": 1
     },
     {
