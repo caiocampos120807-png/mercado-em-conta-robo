@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "gerado_em_utc": "2026-11-26T22:16:32+00:00",
-  "data_referencia": "2026-11-26",
+  "gerado_em_utc": "2026-11-27T10:31:17+00:00",
+  "data_referencia": "2026-11-27",
   "comparacoes": [
     {
       "sku": "arroz branco|camil|massa|5000",
@@ -18,7 +18,7 @@
       "link_maior": "https://www.paodeacucar.com/produto/41329/arroz-agulhinha-tipo-1-camil-pacote-5kg",
       "diferenca": 9.0,
       "quantidade_mercados": 4,
-      "atualizado": "2026-11-26"
+      "atualizado": "2026-11-27"
     },
     {
       "sku": "agua sanitaria super candida|marca nao identificada|volume|2000",
@@ -38,6 +38,23 @@
       "atualizado": "2026-11-26"
     },
     {
+      "sku": "feijao carioca|camil|massa|1000",
+      "cidade": "São Paulo / SP",
+      "produto": "Feijão carioca",
+      "marca": "Camil",
+      "tamanho": "1",
+      "unidade": "kg",
+      "preco_menor": 7.99,
+      "mercado_menor": "Sonda (online)",
+      "link_menor": "https://www.sondadelivery.com.br/delivery/produto/feijao-carioca-camil--1kg/1000001726",
+      "preco_maior": 10.49,
+      "mercado_maior": "Pão de Açúcar (online)",
+      "link_maior": "https://www.paodeacucar.com/produto/9461/feijao-carioca-tipo-1-camil-pacote-1kg",
+      "diferenca": 2.5,
+      "quantidade_mercados": 4,
+      "atualizado": "2026-11-27"
+    },
+    {
       "sku": "leite integral|parmalat|volume|1000",
       "cidade": "São Paulo / SP",
       "produto": "Leite integral",
@@ -52,23 +69,6 @@
       "link_maior": "https://www.sondadelivery.com.br/delivery/produto/leite-longa-vida-integral-parmalat-1-litro/1000012315",
       "diferenca": 1.6,
       "quantidade_mercados": 3,
-      "atualizado": "2026-11-26"
-    },
-    {
-      "sku": "feijao carioca|camil|massa|1000",
-      "cidade": "São Paulo / SP",
-      "produto": "Feijão carioca",
-      "marca": "Camil",
-      "tamanho": "1",
-      "unidade": "kg",
-      "preco_menor": 9.38,
-      "mercado_menor": "Carrefour (online)",
-      "link_menor": "https://mercado.carrefour.com.br/produto/feijao-carioca-camil-1kg-2927",
-      "preco_maior": 10.66,
-      "mercado_maior": "Sonda (online)",
-      "link_maior": "https://www.sondadelivery.com.br/delivery/produto/feijao-carioca-camil--1kg/1000001726",
-      "diferenca": 1.28,
-      "quantidade_mercados": 4,
       "atualizado": "2026-11-26"
     }
   ],

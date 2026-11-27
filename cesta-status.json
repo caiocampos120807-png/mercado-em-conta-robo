@@ -1,13 +1,13 @@
 {
-  "atualizado_utc": "2026-11-26T22:16:32+00:00",
-  "ofertas_ativas": 578,
-  "produtos_arquivados": 718,
-  "registrados_antes": 573,
-  "novos_links_confirmados": 5,
+  "atualizado_utc": "2026-11-27T10:31:17+00:00",
+  "ofertas_ativas": 487,
+  "produtos_arquivados": 723,
+  "registrados_antes": 578,
+  "novos_links_confirmados": 27,
   "prioridades_familia_4": [
     {
       "item": "Arroz",
-      "ofertas": 33,
+      "ofertas": 35,
       "mercados": 4
     },
     {
@@ -32,12 +32,12 @@
     },
     {
       "item": "Macarrão",
-      "ofertas": 4,
+      "ofertas": 5,
       "mercados": 2
     },
     {
       "item": "Ovos",
-      "ofertas": 7,
+      "ofertas": 6,
       "mercados": 1
     },
     {
@@ -47,17 +47,12 @@
     },
     {
       "item": "Carne bovina",
-      "ofertas": 20,
-      "mercados": 2
-    },
-    {
-      "item": "Sal",
-      "ofertas": 1,
+      "ofertas": 19,
       "mercados": 1
     },
     {
       "item": "Farinha de trigo",
-      "ofertas": 3,
+      "ofertas": 2,
       "mercados": 1
     },
     {
@@ -67,13 +62,18 @@
     },
     {
       "item": "Pão de forma",
-      "ofertas": 6,
+      "ofertas": 3,
       "mercados": 1
     },
     {
       "item": "Queijo",
       "ofertas": 3,
       "mercados": 2
+    },
+    {
+      "item": "Iogurte",
+      "ofertas": 1,
+      "mercados": 1
     },
     {
       "item": "Alho",
