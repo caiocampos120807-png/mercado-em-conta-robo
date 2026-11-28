@@ -1,12 +1,12 @@
 {
-  "gerado_em_utc": "2026-11-27T22:18:09+00:00",
+  "gerado_em_utc": "2026-11-28T10:13:09+00:00",
   "redes_candidatas": 6,
-  "novos_links_descobertos": 28,
+  "novos_links_descobertos": 18,
   "paginas_listagem_consultadas": 14,
   "paginas_produto_consultadas": 78,
-  "ofertas_na_lista": 0,
-  "ofertas_na_pagina": 64,
-  "precos_ativos_total": 480,
+  "ofertas_na_lista": 11,
+  "ofertas_na_pagina": 51,
+  "precos_ativos_total": 505,
   "redes": {
     "extra": {
       "nome": "Extra Mercado (online)",
@@ -17,8 +17,8 @@
     },
     "carrefour": {
       "nome": "Carrefour (online)",
-      "urls_descobertas": 461,
-      "precos_validos": 143,
+      "urls_descobertas": 475,
+      "precos_validos": 141,
       "estado": "com preços confirmados",
       "localizacao_exigida": false
     },
@@ -38,7 +38,7 @@
     },
     "paguemenos": {
       "nome": "Supermercados Pague Menos (online)",
-      "urls_descobertas": 302,
+      "urls_descobertas": 306,
       "precos_validos": 0,
       "estado": "sem preço confirmado",
       "localizacao_exigida": true
@@ -52,21 +52,33 @@
     }
   },
   "avisos": [
-    "listagem mambo: HTTPError: HTTP Error 404: Not Found",
+    "produto carrefour: ValueError: Embalagem ambígua (nenhuma ou várias quantidades)",
     "produto carrefour: HTTPError: HTTP Error 404: Not Found",
-    "produto extra: ValueError: Preço indisponível",
+    "produto carrefour: ValueError: Kit ou múltiplas embalagens não comparáveis com segurança",
+    "produto carrefour: ValueError: Embalagem ambígua (nenhuma ou várias quantidades)",
+    "produto carrefour: ValueError: Embalagem ambígua (nenhuma ou várias quantidades)",
+    "produto carrefour: ValueError: Embalagem ambígua (nenhuma ou várias quantidades)",
+    "produto carrefour: HTTPError: HTTP Error 404: Not Found",
+    "produto carrefour: ValueError: Embalagem ambígua (nenhuma ou várias quantidades)",
+    "produto carrefour: HTTPError: HTTP Error 404: Not Found",
     "produto carrefour: ValueError: Embalagem ambígua (nenhuma ou várias quantidades)",
     "produto carrefour: HTTPError: HTTP Error 404: Not Found",
     "produto carrefour: HTTPError: HTTP Error 404: Not Found",
     "produto carrefour: HTTPError: HTTP Error 404: Not Found",
     "produto carrefour: HTTPError: HTTP Error 404: Not Found",
     "produto carrefour: ValueError: Oferta JSON-LD sem título do produto visível",
+    "produto carrefour: ValueError: Oferta JSON-LD sem título do produto visível",
+    "produto carrefour: ValueError: Oferta JSON-LD sem título do produto visível",
+    "produto carrefour: ValueError: Kit ou múltiplas embalagens não comparáveis com segurança",
     "produto carrefour: ValueError: Kit ou múltiplas embalagens não comparáveis com segurança",
     "produto carrefour: ValueError: Kit ou múltiplas embalagens não comparáveis com segurança",
     "produto carrefour: ValueError: Oferta JSON-LD sem título do produto visível",
-    "produto carrefour: ValueError: Kit ou múltiplas embalagens não comparáveis com segurança",
     "produto carrefour: ValueError: Oferta JSON-LD sem título do produto visível",
-    "produto carrefour: HTTPError: HTTP Error 404: Not Found"
+    "produto carrefour: ValueError: Oferta JSON-LD sem título do produto visível",
+    "produto carrefour: HTTPError: HTTP Error 404: Not Found",
+    "produto carrefour: ValueError: Embalagem ambígua (nenhuma ou várias quantidades)",
+    "produto carrefour: ValueError: Embalagem ambígua (nenhuma ou várias quantidades)",
+    "produto carrefour: ValueError: Embalagem ambígua (nenhuma ou várias quantidades)"
   ],
   "nota": "Redes candidatas NÃO são mercados com preços disponíveis. Preços online, sujeitos a loja/CEP. Bloqueio, ausência de preço e estoque desconhecido nunca geram ofertas fictícias."
 }

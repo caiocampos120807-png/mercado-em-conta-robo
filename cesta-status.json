@@ -1,13 +1,13 @@
 {
-  "atualizado_utc": "2026-11-27T22:18:10+00:00",
-  "ofertas_ativas": 489,
-  "produtos_arquivados": 725,
-  "registrados_antes": 487,
-  "novos_links_confirmados": 2,
+  "atualizado_utc": "2026-11-28T10:13:09+00:00",
+  "ofertas_ativas": 514,
+  "produtos_arquivados": 732,
+  "registrados_antes": 489,
+  "novos_links_confirmados": 85,
   "prioridades_familia_4": [
     {
       "item": "Arroz",
-      "ofertas": 35,
+      "ofertas": 34,
       "mercados": 4
     },
     {
@@ -17,17 +17,17 @@
     },
     {
       "item": "Leite UHT",
-      "ofertas": 37,
+      "ofertas": 38,
       "mercados": 3
     },
     {
       "item": "Café",
-      "ofertas": 14,
+      "ofertas": 15,
       "mercados": 2
     },
     {
       "item": "Açúcar",
-      "ofertas": 8,
+      "ofertas": 9,
       "mercados": 2
     },
     {
@@ -61,17 +61,17 @@
       "mercados": 1
     },
     {
-      "item": "Pão de forma",
-      "ofertas": 3,
+      "item": "Queijo",
+      "ofertas": 2,
       "mercados": 1
     },
     {
-      "item": "Queijo",
-      "ofertas": 3,
-      "mercados": 2
+      "item": "Iogurte",
+      "ofertas": 1,
+      "mercados": 1
     },
     {
-      "item": "Iogurte",
+      "item": "Cebola",
       "ofertas": 1,
       "mercados": 1
     },
@@ -97,17 +97,17 @@
     },
     {
       "item": "Papel higiênico",
-      "ofertas": 5,
+      "ofertas": 7,
       "mercados": 1
     },
     {
       "item": "Detergente",
-      "ofertas": 7,
+      "ofertas": 8,
       "mercados": 1
     },
     {
       "item": "Sabão em pó ou líquido",
-      "ofertas": 7,
+      "ofertas": 5,
       "mercados": 1
     },
     {
@@ -127,7 +127,7 @@
     },
     {
       "item": "Pasta de dente",
-      "ofertas": 3,
+      "ofertas": 2,
       "mercados": 1
     },
     {

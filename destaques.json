@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "gerado_em_utc": "2026-11-27T22:18:10+00:00",
-  "data_referencia": "2026-11-27",
+  "gerado_em_utc": "2026-11-28T10:13:09+00:00",
+  "data_referencia": "2026-11-28",
   "comparacoes": [
     {
       "sku": "arroz branco|camil|massa|5000",
@@ -12,7 +12,7 @@
       "unidade": "kg",
       "preco_menor": 23.99,
       "mercado_menor": "Carrefour (online)",
-      "link_menor": "https://mercado.carrefour.com.br/produto/arroz-branco-camil-tipo-1-5kg-1970",
+      "link_menor": "https://mercado.carrefour.com.br/produto/arroz-branco-camil-tipo-kg-1970",
       "preco_maior": 32.99,
       "mercado_maior": "Pão de Açúcar (online)",
       "link_maior": "https://www.paodeacucar.com/produto/41329/arroz-agulhinha-tipo-1-camil-pacote-5kg",
@@ -52,7 +52,7 @@
       "link_maior": "https://www.paodeacucar.com/produto/9461/feijao-carioca-tipo-1-camil-pacote-1kg",
       "diferenca": 2.5,
       "quantidade_mercados": 4,
-      "atualizado": "2026-11-27"
+      "atualizado": "2026-11-28"
     },
     {
       "sku": "leite integral|parmalat|volume|1000",

@@ -1,22 +1,22 @@
 {
   "schema": 1,
-  "gerado_em_utc": "2026-11-27T22:18:10+00:00",
-  "data_referencia": "2026-11-27",
-  "ofertas_validadas": 489,
-  "produtos_distintos_total": 472,
+  "gerado_em_utc": "2026-11-28T10:13:09+00:00",
+  "data_referencia": "2026-11-28",
+  "ofertas_validadas": 514,
+  "produtos_distintos_total": 498,
   "mercados_com_precos": 4,
   "comparacoes_possiveis_por_cidade": 4,
   "cidades": [
     {
       "cidade": "São Paulo / SP",
       "mercados_com_preco": 4,
-      "produtos_distintos": 472,
+      "produtos_distintos": 498,
       "produtos_comparaveis": 4,
-      "ofertas": 489,
+      "ofertas": 514,
       "mercados": [
         {
           "nome": "Carrefour (online)",
-          "skus": 145
+          "skus": 143
         },
         {
           "nome": "Extra Mercado (online)",
@@ -28,7 +28,7 @@
         },
         {
           "nome": "Sonda (online)",
-          "skus": 330
+          "skus": 358
         }
       ]
     }
@@ -36,11 +36,11 @@
   "mercados": [
     {
       "nome": "Sonda (online)",
-      "ofertas": 331
+      "ofertas": 359
     },
     {
       "nome": "Carrefour (online)",
-      "ofertas": 152
+      "ofertas": 149
     },
     {
       "nome": "Extra Mercado (online)",
@@ -54,11 +54,11 @@
   "categorias": [
     {
       "nome": "Mercearia",
-      "ofertas": 246
+      "ofertas": 263
     },
     {
       "nome": "Carnes",
-      "ofertas": 112
+      "ofertas": 118
     },
     {
       "nome": "Laticínios",
@@ -66,19 +66,19 @@
     },
     {
       "nome": "Bebidas",
-      "ofertas": 28
+      "ofertas": 29
     },
     {
       "nome": "Higiene",
-      "ofertas": 27
+      "ofertas": 28
     },
     {
       "nome": "Limpeza",
-      "ofertas": 23
+      "ofertas": 22
     },
     {
       "nome": "Hortifruti",
-      "ofertas": 12
+      "ofertas": 13
     }
   ],
   "registros_rejeitados": 0,
